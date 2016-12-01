@@ -1,0 +1,167 @@
+﻿<!Doctype html>
+<html>
+<head>
+<title> Транспорт </title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+   body { margin: 0; }
+      #sidebar, #content0,#footer{ position: absolute; } 
+   #sidebar, #content0,#footer{ overflow: auto; padding: 10px; }
+   #content0{text-align:center;}
+   #sidebar { 
+    width: 30%; 
+    top: 15%; 
+    bottom: 0; 
+   }
+ 
+ 
+   #content0 {
+    top: 15%; 
+    left: 30%; 
+    bottom: 0; right: 0;
+   }
+   #footer {
+    top: 90%; 
+    left: 0%; 
+    bottom: 0%; right: 0;
+   }
+  
+  </style>
+ </head>
+ <body>
+<div style=" position:absolute; top:5%;right:5%; left:85%"><i><u><a href="mainpage.html">Выход</a></u></i></div> 
+ <div style="position:absolute; left:80% "> 
+      <img src="profil.jpg" alt="profil" style="width:35px; height:35px"> 
+  </div>
+ <header><h1 style="text-align:center; color:#0B0B61"><b>EASY TRAVEL</b></h1>
+ <div style="text-align:center">
+ <table style="width:100%; height: 5%; border:1px solid black">
+<tr>
+<td><a href="gorod.html">Города</a></td>
+<td><a href="hotels.html">Отели</a></td>
+<td>Транспорт</td>
+<td><a href="excursions.html">Экскурсии</a></td>
+
+</tr>
+</table>
+</div>
+</header>
+  <div id="sidebar">
+<div style="text-align:center"><h2><i> Страна</i></h2>
+<form>
+	<select>
+		<option value="u1">Беларусь</option>
+		<option value="u2">Россия</option>
+		<option value="u3">Великобритания</option>
+		<option value="u4">Германия</option>
+		<option value="u5">Польша</option>
+	</select>
+</form>
+</div>
+   <div style="text-align:center"><h2 ><i> Город</i></h2>
+<form>
+  <p><input name="city" placeholder="Город" size=13></p>
+</form>
+</div>
+<div style="text-align:center">
+<h2><i><label for="Date">Дата </label> </i></h2>
+
+<input id="date" min="2016-10-31" max="2017-10-31" type="date" name="date">
+
+</div>
+ 
+<div style="text-align:center"><h2><i> 
+Цена до ($) 
+</i> 
+</h2> 
+</div>
+
+
+<div style="text-align:center"> 
+<input type="range" min="10" max="1000" onchange="document.getElementById('rangeValue').innerHTML = this.value;" list="rangeList"> <span id="rangeValue">500</span> 
+</div>
+
+<datalist id="rangeList"> 
+<input type="range" min="10" max="1000" step="10" value="50"> 
+</datalist> 
+  <form>
+
+<div style="text-align:center">
+      <input type="button" value=" Найти ">
+    </div>
+    
+ </form>
+  </div>
+  <div id="content0">
+   <h2><i>
+  <ins>Транспорт</ins>
+  </i></h2>
+  
+  
+  <table style="width:100%; height: 1%; border:3px solid black"> 
+<tr>
+
+<td><b>Откуда</b></td>
+<td><b>Куда</b></td>
+<td><b>Вид транспорта</b></td>
+<td><b>Время отъезда</b></td>
+<td><b>Время приезда</b></td>
+<td><b>цена</b></td>
+ 
+ </tr>
+ <tr>
+ <td>.............<p>.............<p>.............
+ <p>.............<p>.............<p>.............</td>
+ <td>.............<p>.............<p>.............
+ <p>.............<p>.............<p>.............</td>
+ <td>.............<p>.............<p>.............
+ <p>.............<p>.............<p>.............</td>
+ <td>.............<p>.............<p>.............
+ <p>.............<p>.............<p>.............</td>
+ <td>.............<p>.............<p>.............
+ <p>.............<p>.............<p>.............</td>
+ <td>.............<p>.............<p>.............
+ <p>.............<p>.............<p>.............</td>
+ </tr></table>
+   <table style="border:0px; width:100%"> 
+   
+<tr>
+   <td>
+  <form>
+ 
+     <button formaction="hotels.html">2 шаг (Выбор отеля)</button>
+  
+  </form>
+  </td>
+  <td> 
+  <form>
+ 
+    <button formaction="mainpage.html">На главную </button>
+  
+  </form>
+  </td>
+  <td> 
+  <form>
+
+    <button formaction="excursions.html">4 шаг (Выбор эускурсии)</button>
+    
+  </form>
+  </td>
+  </tr> 
+</table> 
+
+</div> 
+<div id="footer">
+  <hr>
+ <div style="position:absolute; left:45%">
+  ©2016MMF2group
+  </div>
+  <div style="position:absolute; left:55%; top:35%">
+  <img src="vk-logo.png" alt="vk-logo" width=23 height=23 >
+   </div>
+   <div style="position:absolute; left:57% ; top:35%">
+  <img src="facebook-logo.png" alt="facebook-logo" width=25 height=25 >
+   </div>
+  </div>
+</body> 
+</html> 
