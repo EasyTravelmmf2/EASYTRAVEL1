@@ -1,0 +1,136 @@
+<!Doctype html>
+<html>
+<head>
+<title> Мой профиль</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+   body { margin: 0; }
+    #sidebar, #content0,#footer{ position: absolute; } 
+   #sidebar, #content0,#footer{ overflow: auto; padding: 10px; }
+   #content0{text-align:center;}
+   #sidebar { 
+    width: 30%; 
+    top: 15%; 
+    bottom: 0; 
+   }
+ 
+ 
+   #content0 {
+    top: 15%; 
+    left: 30%; 
+    bottom: 0; right: 0;
+   }
+   #footer {
+    top: 90%; 
+    left: 0%; 
+    bottom: 0%; right: 0;
+   }
+   </style>
+
+   </head>
+<body>
+<div style=" position:absolute; top:5%;right:5%; left:85%"><i><u><a href="mainpage.html">Выход</a></u></i></div> 
+ <div style="position:absolute; left:80% "> 
+      <img src="profil.jpg" alt="profil" style="width:35px; height:35px"> 
+  </div>
+ <header><h1 style="text-align:center; color:#0B0B61"><b> EASY TRAVEL</b></h1></header>
+<div id="sidebar">
+<div style="text-align:center"><img src="x_f58f0914.jpg" alt="фото профиля" width=100 height=100 >
+</div>
+<p></p>
+<b>
+<div style="text-align:center">Имя:    </div> <p></p>
+<div style="text-align:center">Фамилия:   </div><p></p>
+<div style="text-align:center">E-mail:    </div><p></p>
+<div style="text-align:center">Контактные данные:    </div>
+</b>
+
+
+
+
+</div>
+
+<div style="text-align:center"><h1><ins>Ваш заказ</ins></h3>
+<div style="text-align:center"><h2><i> Отель</i></h2>
+<form>
+	<select>
+		<option value="u1">5 звезд</option>
+		<option value="u2">4 звезды</option>
+		<option value="u3">3 звезды</option>
+		<option value="u4">2 звезды</option>
+		<option value="u5">1 звезда</option>
+	</select>
+</form>
+</div>
+   <div style="text-align:center"><h2 ><i>Город</i></h2>
+<form>
+  <p><input name="city" placeholder="Город" size=13></p>
+</form>
+</div>
+<div style="text-align:center">
+<h2><i><label for="Date">Дата </label> </i></h2>
+
+<input id="date" min="2016-10-31" max="2017-10-31" type="date" name="date">
+
+</div>
+<div style="text-align:center"><h2><i>Транспорт</i></h2>
+<form>
+	<select>
+		<option value="u1">Автобус</option>
+		<option value="u2">Автомобиль</option>
+		<option value="u3">Велосипед</option>
+
+	</select>
+</form>
+</div>
+<div style="text-align:center"><h2><i>Способ оплаты</i></h2>
+<form>
+	<select>
+		<option value="u1">Наличка</option>
+		<option value="u2">Карточка</option>
+		<option value="u3">Чек</option>
+
+	</select>
+</form>
+</div>
+<div style="text-align:center"><h2><i> Сумма заказа</i> </h2> 
+</div>
+<div style="text-align:center"> 
+<input type="range" min="100" max="1000" onchange="document.getElementById('rangeValue').innerHTML = this.value;" list="rangeList"> <span id="rangeValue">450</span> 
+</div>
+<center>
+ <table style="border:0px; width:12%; text-align:center"> 
+  
+<tr>
+   <td>
+  <form>
+
+    <button formaction="mainpage.html">Подтвердить</button>
+
+  </form>
+  </td>
+  <td> 
+  <form>
+ 
+    <button formaction="profil.html">Отмена</button>
+  
+  </form>
+  </td>
+
+</table> </center>
+
+</div> 
+<div id="footer">
+  <hr>
+ <div style="position:absolute; left:45%">
+  ©2016MMF2group
+  </div>
+  <div style="position:absolute; left:55%; top:35%">
+  <img src="vk-logo.png" alt="vk-logo" width=23 height=23 >
+   </div>
+   <div style="position:absolute; left:57% ; top:35%">
+  <img src="facebook-logo.png" alt="facebook-logo" width=25 height=25 >
+   </div>
+  </div>
+</body> 
+</html> 
