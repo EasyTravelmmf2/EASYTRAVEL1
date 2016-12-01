@@ -1,0 +1,126 @@
+<!Doctype html>
+<html>
+<head>
+<title> Отель </title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+   body { margin: 0; }
+   #sidebar, #content0,#footer{ position: absolute; } 
+   #sidebar, #content0,#footer{ overflow: auto; padding: 10px; }
+   #sidebar { 
+    left:3%;
+    width: 30%; 
+    top: 30%; 
+    right: 77%;
+    bottom: 20%; 
+   }
+   #content0 {
+    top: 13%; 
+    left: 30%; 
+    bottom: 10%; right: 0;
+   }
+    #footer {
+    top: 90%; 
+    left: 0%; 
+    bottom: 0%; right: 0;
+   }
+  </style>
+ </head>
+ <body>
+ 
+ <div style=" position:absolute; top:5%;right:5%; left:85%"><a href="mainpage.html"><i><u>Выход</u></i></a></div>
+ <div style="position:absolute; left:80% "> 
+<a href="profile.html"><img src="profil.jpg" alt="profile" style="width:35px; height:35px"></a>
+</div>
+<header>
+ <h1 style="color:#0B0B61; text-align:center"><b>EASY TRAVEL</b></h1>
+ <table style="width:100%; height: 5%; border:1px solid black">
+<tr>
+<td style="text-align:center"><a href="gorod.html">Города</a></td>
+<td style="text-align:center"><a href="hotels.html">Отели</a></td>
+<td style="text-align:center"><a href="transport.html">Транспорт</a></td>
+<td style="text-align:center"><a href="excursions.html">Экскурсии</a></td>
+</tr>
+</table>
+</header>
+  <div id="sidebar">
+  <img src="Minsk1.jpg" alt="hotel"  width=400 >
+  </div>
+  <div id="content0">
+  <h2 style="text-align:center"><i>Гостиница "Минск"</i></h2>
+  <div style="position:absolute;left:5%; right:50%; top:20%">
+  <p>Проспект Независимости 11, Район Московский, 220030 Минск, Беларусь</p>
+  <h3>Отзывы: 4,5 из 5&#9733; </h3>
+  <hr>
+  <blockquote>&bull;«Очень удобное расположение:самый центр, есть бесплатная парковка для постояльцев  во внутреннем дворе отеля, в номерах чисто, удобно, тепло и комфортно.»</blockquote>
+  <blockquote>&bull;«Собираясь в Минск, выбирали отель в центре города. Этот вариант - то, что надо! Соотношение цена-качество выше всяких похвал! В следующий мой приезд остановлюсь только здесь! Рядом с отелем есть кафе "У Франциска", всем очень рекомендую его посетить!!!»</blockquote>
+  </div>
+  <div style="position:absolute;left:50%; right:5%">
+  <h4 style="text-align:center"> Желаете здесь остановиться?</h4>
+  <h4 style="text-align:center" ><i>Дата заезда</i></h4>
+<p style="text-align:center"><input style="width:180px" id="date" min="2016-10-31" max="2017-10-31" type="date" name="date"></p> 
+ <h4 style="text-align:center" ><i>Количество дней</i></h4>
+ <p style="text-align:center"><input type="number" name="number"></p>
+ <h4 style="text-align:center" ><i>Количество человек</i></h4>
+ <p style="text-align:center"><input type="number" name="number"></p>
+ <h4 style="text-align:center" ><i>Тип номера</i></h4>
+ <form style="text-align:center"> 
+  <select style="width:180px">
+    <option value="u1">Одноместный</option>
+    <option value="u2">Двухместный</option>
+    <option value="u3">Улучшенный двухместный</option>
+    <option value="u4">Люкс</option>
+    <option value="u5">Апартаменты</option>
+  </select>
+</form> 
+ <h4 style="text-align:center" ><i>Цена</i></h4>
+ <p style="text-align:center"><input  style="width:150px" type='text' name='price'>руб</p> 
+  </div>
+  <table style="border:0%; width:90% ;position:absolute; left: 5%; right: 5%; top:90%">
+   <tr>
+   <td>
+  <form>
+	<p style="text-align:center">
+   		<button formaction="gorod.html">1 шаг (Выбор города)</button>
+   	</p>
+  </form>
+  </td>
+  <td> 
+  <form>
+	<p style="text-align:center">
+    <button formaction="mainpage.html">На главную </button>
+   	</p>
+  </form>
+  </td>
+   <td> 
+  <form>
+  <p style="text-align:center">
+    <button formaction="profile.html">Заказать</button>
+    </p>
+  </form>
+  </td>
+  <td> 
+  <form>
+	<p style="text-align:center">
+   	<button formaction="transport.html">3 шаг (Выбор транспорта)</button>
+   	</p>
+  </form>
+  </td>
+  </tr>
+ </table>
+ 
+  </div>
+  <div id="footer">
+  <hr>
+  <div style="position:absolute; left:45%">
+  ©2016MMF2group
+  </div>
+  <div style="position:absolute; left:55%; top:35%">
+  <img src="vk-logo.png" alt="vk-logo" width=23 height=23>
+   </div>
+   <div style="position:absolute; left:57% ; top:35%">
+  <img src="facebook-logo.png" alt="facebook-logo" width=25 height=25>
+   </div>
+  </div>
+   </body>
+</html>
