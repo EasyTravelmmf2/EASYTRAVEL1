@@ -1,0 +1,2 @@
+1. As a user I can choose the full list of hotels to decide where to stay.
+2. As a user I can read information about some hotel to know more about it.
