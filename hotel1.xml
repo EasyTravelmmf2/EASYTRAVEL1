@@ -1,0 +1,9 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <hotel>
+ <selection date="29/12/2016" days="1" people="4" roomtype="Lux">
+ <price>250</price>
+ </selection>
+ <selection date="29/12/2016" days="2" people="3" roomtype="Lux">
+ <price>290</price>
+ </selection>
+ </hotel>
