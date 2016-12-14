@@ -1,37 +1,31 @@
  <?xml version="1.0" encoding="utf-8"?>
- <hotels>
- 	<selection city="Minsk" date="29.12.2016" price="250">
- 		<hotel name="1"/>
- 		<hotel name="2"/>
- 		<hotel name="3"/>
- 		<hotel name="4"/>
- 		<hotel name="5"/>
- 		<hotel name="6"/>
- 	</selection>
- 	<selection city="Mogilev" date="30.12.2016" price="290">
- 		<hotel name="1"/>
- 		<hotel name="2"/>
- 		<hotel name="3"/>
- 		<hotel name="4"/>
- 		<hotel name="5"/>
- 		<hotel name="6"/>
- 	</selection>
- 	<selection city="Grodno" date="20.12.2016" price="210">
- 		<hotel name="1"/>
- 		<hotel name="2"/>
- 		<hotel name="3"/>
- 		<hotel name="4"/>
- 		<hotel name="5"/>
- 		<hotel name="6"/>
- 	</selection>
- 	<selection city="Vitebsk" date="31.12.2016" price="280">
- 		<hotel name="1"/>
- 		<hotel name="2"/>
- 		<hotel name="3"/>
- 		<hotel name="4"/>
- 		<hotel name="5"/>
- 		<hotel name="6"/>
- 	</selection>
- </hotels>
+ <selectionform>
+ 	<cities>
+ 		<city>Минск</city>
+ 		<city>Могилев</city>
+ 		<city>Витебск</city>
+ 		<city>Гродно</city>
+ 		<city>Гомель</city>
+ 		<city>Брест</city>
+ 	</cities>
+ 	<dates>
+ 		<date>29/12/2016</date>
+ 		<date>30/12/2016</date>
+ 		<date>31/12/2016</date>
+ 		<date>1/01/2017</date>
+ 		<date>2/01/2017</date>
+ 		<date>3/01/2017</date>
+ 	</dates>
+ 	 <onedayprice>  	
+ 		<price>250</price>
+ 		<price>250</price>
+ 		<price>250</price>
+ 		<price>250</price>
+ 		<price>250</price>
+ 		<price>250</price>
+ 	</onedayprice>
+ </selectionform>
+
+ 	
 
 
