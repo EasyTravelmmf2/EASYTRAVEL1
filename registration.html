@@ -19,9 +19,13 @@ left: 0%;
 bottom: 10%; right: 0; 
 } 
 #footer { 
-top: 90%; 
-left: 0%; 
-bottom: 0%; right: 0; 
+ position: fixed;
+        top: 95%; 
+        left: 0%; 
+        bottom: 0%; 
+        right:0%;
+        border-top:1px solid #6E7783;
+        background-color: white;
 } 
 ::-webkit-scrollbar{
         width:7px;
@@ -127,17 +131,16 @@ header{
 <p style="text-align:center"><button formaction="gorod.html">Зарегистрироваться</button></p>
 </form> 
 </div> 
-<div id="footer"> 
-<hr> 
-<div style="position:absolute; left:45%"> 
-©2016MMF2group 
-</div> 
-<div style="position:absolute; left:55%; top:35%"> 
-<img src="vk-logo.png" alt="vk-logo" width=23 height=23> 
-</div> 
-<div style="position:absolute; left:57% ; top:35%"> 
-<img src="facebook-logo.png" alt="facebook-logo" width=25 height=25> 
-</div> 
+<div id="footer">
+      <div style="position:absolute; left:45%">
+         ©2016MMF2group
+      </div>
+      <div style="position:absolute; left:56%; top:20%">
+          <img src="vk-logo.png" alt="vk-logo" style="height:23px; width:23px">
+      </div>
+      <div style="position:absolute; left:58% ; top:20%">
+          <img src="facebook-logo.png" alt="facebook-logo" style="height: 25px; width: 25px;">
+      </div>
 </div> 
 </body> 
 </html>

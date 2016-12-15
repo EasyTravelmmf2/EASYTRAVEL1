@@ -4,7 +4,7 @@
 <title> Города </title> 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
 <style type="text/css"> 
-body { margin: 0; } 
+body { margin: 0; background: #d5dbe8; } 
 #sidebar, #content0, #content1,#footer{ position: absolute; } 
 #sidebar, #content0,#content1,#footer{ overflow: auto; padding: 10px; } 
 header{
@@ -17,23 +17,32 @@ header{
         z-index:1;
       }
 #sidebar { 
-left:0%; 
-width: 47%; 
-top: 25%; 
-bottom: 10%; 
+		position: fixed;
+        top:23%;
+        left:5%;
+        right:54%; 
+        bottom: 5%;
+        padding-top: 4%;
+        background: white;
 } 
 #content0 { 
-top: 30%; 
-left: 45%; 
-bottom: 5%; right: 5%; 
-position: fixed;
-background: white;
+ 		position: fixed;
+        padding-top: 4%;
+        top: 23%; 
+        left: 45%; 
+        bottom: 5%; 
+        right: 5%; 
+        background: white;
 } 
-#footer { 
-top: 90%; 
-left: 0%; 
-bottom: 0%; right: 0; 
-} 
+ #footer {
+        position: fixed;
+        top: 95%; 
+        left: 5%; 
+        bottom: 0%; 
+        right: 5%;
+        border-top:1px solid #6E7783;
+        background-color: white;
+      }
   #navbar {
         position: fixed;
         margin-left: 0%;
@@ -103,7 +112,7 @@ bottom: 0%; right: 0;
   </header>
 <div id="sidebar">
  <p><input type="search" name="найти город" placeholder="найти город"></p> 
-<h4><img src="gorod.jpg" alt="Минск" height="380" width="650"></h4>
+<h4><img src="gorod.jpg" alt="Минск" height="340" width="600"></h4>
 </div>
 	<div id="content0"> 
    <h2><i style="text-align:center; color:#0B0B61">Минск</i></h2> 
@@ -129,17 +138,16 @@ bottom: 0%; right: 0;
     </tr>
   </table>
   </div>
- <div id="footer"> 
-<hr> 
-<div style="position:absolute; left:45%"> 
-©2016MMF2group 
-</div> 
-<div style="position:absolute; left:55%; top:35%"> 
-<img src="vk-logo.png" alt="vk-logo" width=23 height=23> 
-</div> 
-<div style="position:absolute; left:57% ; top:35%"> 
-<img src="facebook-logo.png" alt="facebook-logo" width=25 height=25> 
-</div> 
+<div id="footer">
+      <div style="position:absolute; left:45%">
+         ©2016MMF2group
+      </div>
+      <div style="position:absolute; left:56%; top:20%">
+          <img src="vk-logo.png" alt="vk-logo" style="height:23px; width:23px">
+      </div>
+      <div style="position:absolute; left:58% ; top:20%">
+          <img src="facebook-logo.png" alt="facebook-logo" style="height: 25px; width: 25px;">
+      </div>
 </div> 
 </body> 
 </html>
