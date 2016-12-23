@@ -4,80 +4,272 @@
 <title> Города </title> 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
 <style type="text/css"> 
-body { margin: 0; background: #d5dbe8; } 
-#sidebar, #content0, #content1,#footer{ position: absolute; } 
-#sidebar, #content0,#content1,#footer{ overflow: auto; padding: 10px; } 
-header{
+ <link rel="stylesheet" href="gorod.css"/>
+body {
+        width:100%;
+        max-width: 2024px;
+        min-width: 1000px;
+        margin:0;
+        background: #d5dbe8;
+        background-repeat: no-repeat;
+        font-family:Arial,Helvetica, sans-serif;
+         overflow: hidden;
+      }
+#sidebar, #content0,#content1,#content,#footer{ overflow: auto; padding: 10px; } 
+ header{
         position: fixed;
-        width: 100%;
         top:0;
         height:23%;
+        bottom:77%;
+        width: 100%;
+        max-width: 2024px;
+        min-width: 1100px;
         background: url(./header1.png) ;
         background-size: 100% ;
-        z-index:1;
+        z-index: 2;
+        left:0;
       }
+ 
 #sidebar { 
 		position: fixed;
-        top:23%;
-        left:5%;
-        right:54%; 
-        bottom: 5%;
-        padding-top: 4%;
-        background: white;
-} 
+        top:25%;
+        left:10%;
+        right:54%;}
+select{
+	width: 180px;
+	font-size: 23px;}
 #content0 { 
  		position: fixed;
-        padding-top: 4%;
-        top: 23%; 
-        left: 45%; 
-        bottom: 5%; 
-        right: 5%; 
-        background: white;
-} 
- #footer {
+        top: 23%;
+        width: 80%;
+        height: 40%;
+        bottom: 5%;
+        margin-top: 5%;
+        margin-bottom:13%;
+        margin-left:10%;
+        margin-right: 10%;
+        background:#D8E6E7;
+        opacity: 0.6;
+}
+
+#text { 
+ 		position: fixed;
+        top: 23%;
+        width: 75%;
+        height: 40%;
+        bottom: 5%;
+        margin-top: 5%;
+        margin-bottom:13%;
+        margin-left:10%;
+        margin-right: 10%;
+        z-index: 5;
+        font-family: helvetica, sans-serif;
+        font-size: 18px;
+        padding-left: 3%;
+}
+  #content1{
+      	position: fixed;
+      	top: 80%; 
+		left: 0%; 
+		bottom: 3%; right: 0;
+
+      }
+      #content{
+  	position: fixed;
+  	background: url(./gorod.jpg);
+  	top: 23%;
+  	bottom: 5%;
+  	height: 72%;
+  	left: 0;
+  	right:0;
+  	width:100%;
+  	 background-size: 100%;
+        background-repeat: no-repeat;
+        overflow: hidden;
+  }
+#footer {
         position: fixed;
         top: 95%; 
-        left: 5%; 
+        left: 0%; 
         bottom: 0%; 
-        right: 5%;
+        right: 0%;
         border-top:1px solid #6E7783;
         background-color: white;
-      }
-  #navbar {
-        position: fixed;
-        margin-left: 0%;
-        margin-right: 0%;
-        padding: 0;
-        top: 15%;
-        width: 100%;
-        overflow: hidden;
-        list-style-type: none;
+        z-index: 2;
         text-align: center;
-        font-size: 30px;
-        background: #D8E6E7; 
-        box-shadow: 0 0 10px rgba(0,0,0,0.3);        
+        font-size: 13px;
+        font-family: helvetica, sans-serif;
+        overflow: hidden;
       }
-      #navbar li { 
-        display: inline;
+  .menu { 
+        position: fixed;
+        margin-top: 9%;
+        width: 100%;
+        max-width:1700px;
+        min-width: 1700px ;
+        margin-right: 0;
+        margin-left: 0;
+        background: white;
+        bottom:77%;
       }
-      #navbar a {
-        color: #6E7783;
-        text-decoration: none;
-        font-weight: bold;
+
+    .menu > a { 
         display: inline-block;
-        width: 24.6%;
+        position: relative;
+        height: 50px;
+        width: 16.65%;
+        margin-left:0%;
+        margin-right:0%;
+        padding: 0 10px 0 40px;
+        font: 23px/50px helvetica, sans-serif;
+        text-decoration: none;
+        color:#6E7783;
+        background: #D8E6E7;
       }
-      #navbar a:hover {
+
+
+    .menu > a:after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        right: -8%;
+        z-index: 2;
+        border-left: 30px solid #D8E6E7;
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid transparent;
+      }
+
+    .menu >  a:last-of-type:after { 
+        display: none;
+      }
+    .menu >  a:last-of-type{
+      background: #FEF549;
+    }
+        .menu >  a:last-of-type:after:hover { 
+        display: none;
+      }
+    .menu >  a:last-of-type:hover{
+      background: #FEF549;
+    }
+
+
+    .menu > a:before { 
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        z-index: 1;
+        border-left: 31px solid white;
+        border-top: 26px solid transparent;
+        border-bottom: 24px solid transparent;
+      }
+    .menu > a:first-child:before {
+        display: none;
+      }
+
+    .menu > a:hover { 
+        background: #9DC3C1;
         color: black;
-        background-color: #9DC3C1;
-        border-radius: 5px;
       }
-      #content1{
-      	top: 85%; 
-		left: 45%; 
-		bottom: 10%; right: 0;
+
+    .menu > a:hover:after {
+        border-left-color: #9DC3C1;
       }
-        button{
+
+    .menu > a:nth-child(1) { 
+        background: #9DC3C1;
+        color: black;
+      }
+
+    .menu > a:nth-child(1):after {
+        border-left-color: #9DC3C1;
+      }     
+.order{
+    display:none;
+    margin-top: -60px;
+    margin-left:-55%;
+    margin-right: 10%;
+    padding-left: 2%;
+    padding-right: 2%;
+    background:#FFFA9B;
+    height:580px;
+    font-size: 15px;
+    -moz-box-shadow:0 5px 5px rgba(0,0,0,0.3);
+    -webkit-box-shadow:0 5px 5px rgba(0,0,0,0.3);
+    box-shadow:0 5px 5px rgba(0,0,0,0.3);
+    clear:both; text-align:right;
+}
+.order>label{
+ float:left;
+}
+.order>p{
+  text-align: center;
+}
+a:hover>.order{
+    display:block;
+    position:absolute;
+    top:120px;
+    z-index:9999;
+    width:110%;
+}
+.order:after{
+  bottom: 100%;
+  left: 80%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+.order:after {
+  border-color: rgba(136, 183, 213, 0);
+  border-bottom-color: #FFFA9B;
+  border-width: 30px;
+  margin-left: -30px;
+}
+
+   .exit{
+        position:fixed;
+        top:10%;
+        right:3%;
+        left:95%;
+        z-index: 3;
+      }
+
+    .profil{
+        position:fixed; 
+        top:10%; 
+        left:90%; 
+        z-index:3;
+      }
+
+    .exit > a > img , .profil > a > img{
+        width:35px;
+        height:35px
+      }
+
+    #footer:nth-child(1){
+        position:absolute;
+        left:56%;
+        top:20%;
+      }
+    #footer:nth-child(2){
+        position:absolute;
+        left:58% ;
+        top:20%;
+      }
+
+    #footer > img {
+        height:15px;
+        width:15px;
+      }
+    input{
+      width: 180px;
+    }
+
+    button{
         color:black; 
         text-decoration: none;
         user-select: none;
@@ -86,69 +278,146 @@ header{
         padding: .7em 1.5em;
         outline: none;
         border:none; 
-        border-radius: 3px;
-        box-shadow: 0 -3px #1f4e5f inset;
       }
+      tr:nth-last-child(1) > td > form > button[formaction="mainpage.html"] {
+      position: relative;
+      background: #9DC3C1;
+    }
+
+    tr:nth-last-child(1) > td > form > button[formaction="mainpage.html"]:after {
+      right: 100%;
+      top: 50%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-color: rgba(136, 183, 213, 0);
+      border-right-color: #9DC3C1;
+      border-width: 17px;
+      margin-top: -17px;
+    }
+
+    tr:nth-last-child(1) > td > form > button[formaction="hotels.html"] {
+      position: relative;
+      background: #9DC3C1;
+    }
+
+    tr:nth-last-child(1) > td > form > button[formaction="hotels.html"]:after{
+      left: 100%;
+      top: 50%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-color: rgba(136, 183, 213, 0);
+      border-left-color: #9DC3C1;
+      border-width: 17px;
+      margin-top: -17px;
+    }
+    td > img, td > a > img{
+        padding:7%;
+        height: 230px;
+        width: 275px;
+      }
+
+    td > p, td > a > p,td > form{
+        text-align: center;
+      }
+
+    table{
+        width: 100%
+      }
+
+    
 </style> 
 </head> 
-<body> 
- <div style=" position:fixed; top:12%; right:3%; left:95%;z-index:2">
+ <body>
+  <div class="exit">
     <a href="mainpage.html">
-      <img src="exit.png" alt="exit" style="width:35px; height:35px">
+      <img src="exit.png" alt="exit">
     </a>
   </div>
-  <div style="position:fixed; top:12%; left:90%; z-index:2"> 
+  <div class="profil"> 
     <a href="profil.html">
-      <img src="profil.png" alt="profil" style="width:35px; height:35px; color:blue">
+      <img src="profil.png" alt="profil">
     </a>
   </div>
  <header>
-      <ul  id="navbar" >
-        <li><a href="gorod.html" style="background-color: #9DC3C1; border-radius: 5px; color: black">Города</a></li>
-        <li><a href="hotels.html" >Отели</a></li>
-        <li><a href="transport.html">Транспорт</a></li>
-        <li><a href="excursions.html">Экскурсии</a></li>
-      </ul>
+      <div class="menu">
+        <a href="gorod.html">Города</a>
+        <a href="hotels.html" >Отели</a>
+        <a href="transport.html">Транспорт</a>
+        <a href="excursions.html">Экскурсии</a>
+        <a href="#">0 руб.
+         <div class="order">
+        <p>Ваш заказ</p>
+        <label>Город</label>
+        <input type="text" value="Минск" readonly><br>
+        <label>Название отеля</label>
+        <input type="text" readonly><br>
+        <label>Дата заезда</label>
+        <input  id="date" type="date" name="date" readonly><br>
+        <label>Количество ночей</label>
+        <input type="number" name="number" min="1" readonly><br>
+        <label>Количество человек</label>
+        <input type="number" name="number" min="1" readonly><br>
+        <label>Тип номера</label>
+        <input type="text" readonly><br>
+        <label>Транспорт</label>
+        <input type="text" readonly ><br>
+        <label>Дата выезда</label>
+        <input  id="date" type="date" name="date" readonly><br>
+        <label>Вид экскурсии</label>
+        <input type="text" readonly ><br>
+        </div>
+        </a>
+      </div>
+      </div>
   </header>
-<div id="sidebar">
- <p><input type="search" name="найти город" placeholder="найти город"></p> 
-<h4><img src="gorod.jpg" alt="Минск" height="340" width="600"></h4>
+<div id="content">
+	<div id="content0">
+	<div id="sidebar">
+  <form > 
+          <select>
+            <option value="u1">Минск</option>
+            <option value="u2">Витебск</option>
+            <option value="u3">Могилёв</option>
+            <option value="u4">Брест</option>
+            <option value="u5">Гродно</option>
+            <option value="u6">Гродно</option>
+          </select>
+        </form> 
+        </div>
+        </div>
+ <div id="text">
+   <h2 style="text-align:left; color:black">Минск</h2> 
+Минск  — столица Беларуси, административный центр Минской области и Минского района, в состав которых не входит, поскольку является самостоятельной административно-территориальной единицей с особым (столичным) статусом. Имеет звание «Город-Герой». Крупнейший транспортный узел, политический, экономический, культурный и научный центр страны. Является ядром Минской агломерации. В Минске находится штаб-квартира СНГ. Десятый по численности населения (без учёта пригородов) город в Европе, третий — в ЕАЭС. Город расположен недалеко от географического центра страны и стоит на реке Свислочи. Площадь составляет 348,84 км², население — 1964,2 тыс. человек (на 1 июля 2016 года) без учёта пригородов.Минск расположен на юго-восточном склоне Минской возвышенности, имеющей моренное происхождение.
 </div>
-	<div id="content0"> 
-   <h2><i style="text-align:center; color:#0B0B61">Минск</i></h2> 
-<h3 style="text-align:left; color:black"> Минск  — столица Беларуси, административный центр Минской области и Минского района, в состав которых не входит, поскольку является самостоятельной административно-территориальной единицей с особым (столичным) статусом. Имеет звание «Город-Герой». Крупнейший транспортный узел, политический, экономический, культурный и научный центр страны. Является ядром Минской агломерации. В Минске находится штаб-квартира СНГ. Десятый по численности населения (без учёта пригородов) город в Европе, третий — в ЕАЭС. Город расположен недалеко от географического центра страны и стоит на реке Свислочи. Площадь составляет 348,84 км², население — 1964,2 тыс. человек (на 1 июля 2016 года) без учёта пригородов.Минск расположен на юго-восточном склоне Минской возвышенности, имеющей моренное происхождение. Она образовалась во время Сожского оледенения, последнего, достигшего этой 
-</h3>
-
+<div id="content1">
 <table style="border:0%; width:100%">
  <tr>
       <td>
         <form>
-	         <p style="text-align:center">
-   		       <button formaction="mainpage.html">главная страница</button>
-        	 </p>
+   		       <button formaction="mainpage.html">Главная страница</button>
         </form>
       </td>
       <td> 
         <form>
-	         <p style="text-align:center">
-   	          <button formaction="hotels.html">2 шаг (Выбор отеля)</button>
-   	       </p>
+   	          <button formaction="hotels.html">Выбор отеля</button>
         </form>
       </td>
     </tr>
   </table>
-  </div>
-<div id="footer">
-      <div style="position:absolute; left:45%">
-         ©2016MMF2group
-      </div>
-      <div style="position:absolute; left:56%; top:20%">
-          <img src="vk-logo.png" alt="vk-logo" style="height:23px; width:23px">
-      </div>
-      <div style="position:absolute; left:58% ; top:20%">
-          <img src="facebook-logo.png" alt="facebook-logo" style="height: 25px; width: 25px;">
-      </div>
-</div> 
+  </div></div>
+ <div id="footer">
+   ©2016MMF2group
+      <img src="vk-logo.png" alt="vk-logo">
+      <img src="facebook-logo.png" alt="facebook-logo">
+  </div> 
 </body> 
 </html>
   
