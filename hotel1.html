@@ -3,161 +3,58 @@
 <head>
 <title> Отель </title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <style type="text/css">
-   body { 
-       margin: 0; 
-       background: #d5dbe8;
-      } 
-   #sidebar,#content0,#footer{ 
-        overflow: auto; 
-        padding: 10px; 
-      }
-      header{
-        position: fixed;
-        width: 100%;
-        top:0;
-        height:23%;
-        background: url(./header1.png) ;
-        background-size: 100% ;
-        z-index:1;
-      }
-      #navbar {
-        position: fixed;
-        margin-left: 0%;
-        margin-right: 0%;
-        padding: 0;
-        top: 15%;
-        width: 100%;
-        overflow: hidden;
-        list-style-type: none;
-        text-align: center;
-        font-size: 30px;
-        background: #D8E6E7; 
-        box-shadow: 0 0 10px rgba(0,0,0,0.3);
-      }
-    #navbar li { 
-        display: inline;
-         }
-    #navbar a {
-        color: #6E7783;
-        text-decoration: none;
-        font-weight: bold;
-        display: inline-block;
-        width: 24.6%;
-      }
-    #navbar a:hover {
-        color: black;
-        background-color: #9DC3C1;
-        border-radius: 5px;
-      }
-   #sidebar { 
-        position: fixed;
-        top:23%;
-        background: #D8E6E7;
-        left:5%;
-        right:72%; 
-        bottom: 5%;
-        padding-top: 2%;
-      }
-   #content0 {
-       position: fixed;
-        padding-top: 0;
-        top: 23%; 
-        left: 28%; 
-        bottom: 5%; 
-        right: 5%; 
-        background: white;
-      }
-      #leftcontent{
-        position: absolute;
-        margin-left: 0;
-        width:34%;
-        padding-left: 2%;
-      }
-    #rightcontent{
-        position: absolute;
-        margin-left: 42%;
-        margin-right: 3%;
-        padding-left:2%;
-        padding-top:1%;
-        padding-right:2%;
-        border-left: 1px double #9DC3C1;
-        border-right: 1px double #9DC3C1;
-        font-size: 17px;
-      }
-    #footer {
-        position: fixed;
-        top: 95%; 
-        left: 5%; 
-        bottom: 0%; 
-        right: 5%;
-        border-top:1px solid #6E7783;
-        background-color: white;
-      }    
-    button{
-        color:black; 
-        text-decoration: none;
-        user-select: none;
-        cursor: pointer;
-        background:#9DC3C1 ;
-        padding: .7em 1.5em;
-        outline: none;
-        border:none; 
-        border-radius: 3px;
-        box-shadow: 0 -3px #1f4e5f inset;
-      } 
-  </style>
+ <link rel="stylesheet" href="css-for-hotel1.css"/>
+
  </head>
  <body>
-   <div style=" position:fixed; top:12%; right:3%; left:95%;z-index:2">
+  <div class="exit">
     <a href="mainpage.html">
-      <img src="exit.png" alt="exit" style="width:35px; height:35px">
+      <img src="exit.png" alt="exit">
     </a>
   </div>
-  <div style="position:fixed; top:12%; left:90%; z-index:2"> 
+  <div class="profil"> 
     <a href="profil.html">
-      <img src="profil.png" alt="profil" style="width:35px; height:35px">
+      <img src="profil.png" alt="profil">
     </a>
   </div>
   <header>
-      <ul  id="navbar" >
-       <li><a href="gorod.html">Города</a></li>
-       <li><a href="hotels.html" style="color:black;background-color: #9DC3C1; border-radius: 5px;">Отели</a></li>
-       <li><a href="transport.html">Транспорт</a></li>
-       <li><a href="excursions.html">Экскурсии</a></li>
-      </ul>
+      <div class="menu">
+        <a href="gorod.html">Города</a>
+        <a href="hotels.html" >Отели</a>
+        <a href="transport.html">Транспорт</a>
+        <a href="excursions.html">Экскурсии</a>
+        <a href="#">352 руб.
+        <div class="order">
+        <p>Ваш заказ</p>
+        <label>Город</label>
+        <input type="text" value="Минск" readonly><br>
+        <label>Название отеля</label>
+        <input type="text" readonly><br>
+        <label>Дата заезда</label>
+        <input  id="date" type="date" name="date" readonly><br>
+        <label>Количество ночей</label>
+        <input type="number" name="number" min="1" readonly><br>
+        <label>Количество человек</label>
+        <input type="number" name="number" min="1" readonly><br>
+        <label>Тип номера</label>
+        <input type="text" readonly><br>
+        <label>Транспорт</label>
+        <input type="text" readonly ><br>
+        <label>Дата выезда</label>
+        <input  id="date" type="date" name="date" readonly><br>
+        <label>Вид экскурсии</label>
+        <input type="text" readonly ><br>
+        </div>
+        </a>        
+      </div>
   </header>
-  <div id="sidebar">
-  <h3 style="text-align:center"> Желаете здесь остановиться?</h3>
-        <h4 style="text-align:center" ><i>Дата заезда</i></h4>
-        <p style="text-align:center"><input style="width:180px" id="date" min="2016-10-31" max="2017-10-31" type="date" name="date"></p> 
-        <h4 style="text-align:center" ><i>Количество дней</i></h4>
-        <p style="text-align:center"><input type="number" name="number" min="0"></p>
-        <h4 style="text-align:center" ><i>Количество человек</i></h4>
-        <p style="text-align:center"><input type="number" name="number" min="0"></p>
-        <h4 style="text-align:center" ><i>Тип номера</i></h4>
-        <form style="text-align:center"> 
-          <select style="width:180px">
-            <option value="u1">Одноместный</option>
-            <option value="u2">Двухместный</option>
-            <option value="u3">Улучшенный двухместный</option>
-            <option value="u4">Люкс</option>
-            <option value="u5">Апартаменты</option>
-          </select>
-        </form> 
-        <h4 style="text-align:center" ><i>Цена</i></h4>
-        <p style="text-align:center"><input  style="width:150px" type='text' name='price' readonly="">руб</p> 
-        <form>
-          <p style="text-align:center">
-            <button formaction="profile.html">Сделать заказ</button>
-          </p>
-       </form>
-  </div>
-  <div id="content0">
-    <h1 style="text-align:center; color:#1f4e5f">Гостиница "Минск" &#9733;&#9733;&#9733;&#9733;</h1>
+  <div class="layout">
+  
+  <div id="content">
+    <p>Гостиница "Минск" &#9733;&#9733;&#9733;&#9733;</p>
       <div id="leftcontent">
-        <img src="Minsk1.jpg" alt="hotel"  width=400 height="300" style="border-radius: 5px;border-top:5px solid #9DC3C1" >
-         <h4>Адрес: Проспект Независимости 11, Район Московский, 220030 Минск, Беларусь</h4>
+        <img src="Minsk1.jpg" alt="hotel"  width=400 height="300"  >
+         <p>Адрес: Проспект Независимости 11, Район Московский, 220030 Минск, Беларусь</p>
       </div> 
         <div id="rightcontent">
         Этот традиционный отель находится в историческом и культурном центре Минска, рядом с Национальным академическим драматическим театром им. М. Горького и всего в 500 метрах от Белорусского национального художественного музея и стадиона Динамо. К услугам гостей бесплатный Wi-Fi, тренажерный зал и 2 ресторана.<br><br>
@@ -165,45 +62,58 @@
         Номера отеля «Минск» оформлены в индивидуальном стиле в нейтральных тонах и обставлены классической мебелью. Все номера располагают телевизором с плоским экраном и мраморной ванной комнатой с бесплатными туалетными принадлежностями.<br><br>
 
         Элегантные рестораны отеля «Минск» украшены уникальной настенной живописью, которую дополняет классический декор. Гостям подают блюда белорусской и европейской кухни. Каждое утро в отеле сервируют обильный завтрак «шведский стол».<br><br>
-
-        Район Московский — отличный выбор, если вам интересны гостеприимные люди, еда и спокойствие.<br><br>
         </div>
-  <table style="border:0%; width:90% ;position:absolute; left: 5%; right: 5%; top:85%">
+  <table>
    <tr>
    <td>
   <form>
-	<p style="text-align:center">
-   		<button formaction="gorod.html">1 шаг (Выбор города)</button>
-   	</p>
+   		<button formaction="hotels.html">Выбор отеля</button>
   </form>
   </td>
   <td> 
   <form>
-	<p style="text-align:center">
     <button formaction="mainpage.html">На главную </button>
-   	</p>
   </form>
   </td>
   <td> 
   <form>
-	<p style="text-align:center">
-   	<button formaction="transport.html">3 шаг (Выбор транспорта)</button>
-   	</p>
+   	<button formaction="transport.html">Выбор транспорта</button>
   </form>
   </td>
   </tr>
  </table>
   </div>
-    <div id="footer">
-        <div style="position:absolute; left:45%">
-           ©2016MMF2group
-        </div>
-        <div style="position:absolute; left:56%; top:20%">
-          <img src="vk-logo.png" alt="vk-logo" style="height:23px; width:23px">
-        </div>
-        <div style="position:absolute; left:58% ; top:20%">
-          <img src="facebook-logo.png" alt="facebook-logo" style="height: 25px; width: 25px;">
-        </div>
-    </div>
+  <div id="sidebar">
+  <p>Желаете здесь остановиться?</p>
+        <p>Дата заезда</p>
+        <input  id="date" min="2016-10-31" max="2017-10-31" type="date" name="date">
+        <p>Количество ночей</p>
+        <input type="number" name="number" min="0">
+        <p>Количество человек</p>
+        <input type="number" name="number" min="0">
+        <p>Тип номера</p>
+        <form > 
+          <select >
+            <option value="u1">Одноместный</option>
+            <option value="u2">Двухместный</option>
+            <option value="u3">Улучшенный двухместный</option>
+            <option value="u4">Люкс</option>
+            <option value="u5">Апартаменты</option>
+          </select>
+        </form> 
+        <p>Цена</p>
+        <input  type='text' name='price' readonly="">руб
+        <form>
+          <p>
+            <button formaction="profile.html">Сделать заказ</button>
+          </p>
+       </form>
+  </div>
+  </div>
+  <div id="footer">
+   ©2016MMF2group
+      <img src="vk-logo.png" alt="vk-logo">
+      <img src="facebook-logo.png" alt="facebook-logo">
+  </div>
 </body>
 </html>
