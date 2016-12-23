@@ -3,244 +3,124 @@
 <head>
 <title> Отели </title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <style type="text/css">
-    body {
-       margin: 0;
-       background: #d5dbe8;
-      }
-    ::-webkit-scrollbar{
-        width:7px;
-      }
-   ::-webkit-scrollbar-thumb{
-        border-width:1px 1px 1px 2px;
-        border-color: #777;
-        border-radius: 10px;
-        background-color: #aaa;
-      }
-    ::-webkit-scrollbar-thumb:hover{
-        border-width: 1px 1px 1px 2px;
-        border-color: #555;
-        background-color: #777;
-      }
-    #sidebar, #content0, #footer{ 
-        overflow: auto;
-         padding: 10px; 
-      }
-    header{
-        position: fixed;
-        width: 100%;
-        top:0;
-        height:23%;
-        background: url(./header1.png) ;
-        background-size: 100% ;
-        z-index:1;
-      }
-      #navbar {
-        position: fixed;
-        margin-left: 0%;
-        margin-right: 0%;
-        padding: 0;
-        top: 15%;
-        width: 100%;
-        overflow: hidden;
-        list-style-type: none;
-        text-align: center;
-        font-size: 30px;
-        background: #D8E6E7; 
-        box-shadow: 0 0 10px rgba(0,0,0,0.3);        
-      }
-      #navbar li { 
-        display: inline;
-      }
-      #navbar a {
-        color: #6E7783;
-        text-decoration: none;
-        font-weight: bold;
-        display: inline-block;
-        width: 24.6%;
-      }
-      #navbar a:hover {
-        color: black;
-        background-color: #9DC3C1;
-        border-radius: 5px;
-      }
-    #sidebar { 
-        position: fixed;
-        top:23%;
-        background: #D8E6E7;
-        left:5%;
-        right:72%; 
-        bottom: 5%;
-        padding-top: 5%;
-      }
-    #hotels{
-        position: fixed;
-        top:23%;
-        left: 28%; 
-        right: 5%;
-        text-align: center;
-        background: white;
-      }
-    #content0 {
-        position: fixed;
-        padding-top: 0;
-        top: 31%; 
-        left: 28%; 
-        bottom: 5%; 
-        right: 5%; 
-        background: white;
-      }
-    #footer {
-        position: fixed;
-        top: 95%; 
-        left: 5%; 
-        bottom: 0%; 
-        right: 5%;
-        border-top:1px solid #6E7783;
-        background-color: white;
-      }
-    button{
-        color:black; 
-        text-decoration: none;
-        user-select: none;
-        cursor: pointer;
-        background:#9DC3C1 ;
-        padding: .7em 1.5em;
-        outline: none;
-        border:none; 
-        border-radius: 3px;
-        box-shadow: 0 -3px #1f4e5f inset;
-      } 
-  </style>
+  <link rel="stylesheet" href="css-for-hotels.css"/>
  </head>
  <body>
-  <div style=" position:fixed; top:12%; right:3%; left:95%;z-index:2">
+  <div class="exit">
     <a href="mainpage.html">
-      <img src="exit.png" alt="exit" style="width:35px; height:35px">
+      <img src="exit.png" alt="exit">
     </a>
   </div>
-  <div style="position:fixed; top:12%; left:90%; z-index:2"> 
+  <div class="profil"> 
     <a href="profil.html">
-      <img src="profil.png" alt="profil" style="width:35px; height:35px; color:blue">
+      <img src="profil.png" alt="profil">
     </a>
   </div>
  <header>
-      <ul  id="navbar" >
-        <li><a href="gorod.html">Города</a></li>
-        <li><a href="hotels.html" style="background-color: #9DC3C1; border-radius: 5px; color: black">Отели</a></li>
-        <li><a href="transport.html">Транспорт</a></li>
-        <li><a href="excursions.html">Экскурсии</a></li>
-      </ul>
+      <div class="menu">
+        <a href="gorod.html">Города</a>
+        <a href="hotels.html" >Отели</a>
+        <a href="transport.html">Транспорт</a>
+        <a href="excursions.html">Экскурсии</a>
+        <a href="#">352 руб.
+        <div class="order">
+        <p>Ваш заказ</p>
+        <label>Город</label>
+        <input type="text" value="Минск" readonly><br>
+        <label>Название отеля</label>
+        <input type="text" value="Отель 'Минск'" readonly><br>
+        <label>Дата заезда</label>
+        <input  id="date" type="date" name="date" readonly><br>
+        <label>Количество ночей</label>
+        <input type="number" name="number" value="5" min="1" readonly><br>
+        <label>Количество человек</label>
+        <input type="number" name="number" value="4" min="1" readonly><br>
+        <label>Тип номера</label>
+        <input type="text" value="Люкс" readonly><br>
+        <label>Транспорт</label>
+        <input type="text" readonly ><br>
+        <label>Дата выезда</label>
+        <input  id="date" type="date" name="date" readonly><br>
+        <label>Вид экскурсии</label>
+        <input type="text" readonly ><br>
+        </div>
+        </a>
+      </div>
   </header>
-  <div id="sidebar">
-    <h3 style="text-align:center"> <i> Город</i></h3>
-      <form style="text-align:center"> 
-       <select style="width:180px" >
-       <option value="u1">Минск</option>
-       <option value="u2">Могилев</option>
-       <option value="u3">Витебск</option>
-       <option value="u4">Гродно</option>
-       <option value="u5">Гомель</option>
-       <option value="u6">Брест</option>
-       </select>
-      </form>
-    <h3 style="text-align:center"><i>Дата</i></h3>
-    <p style="text-align:center">
-        <input style="width:180px" id="date" min="2016-10-31" max="2017-10-31" type="date" name="date">
-    </p>
-    <h3 style="text-align:center"><i>Цена до (руб)</i></h3> 
-    <p style="text-align:center">
-      <input style="width:150px"  type="range" min="10" max="1000" onchange="document.getElementById('rangeValue').innerHTML = this.value;" list="rangeList"> <span id="rangeValue">500</span>
-    </p>
-    <datalist id="rangeList">
-      <input  type="range" min="10" max="5000" step="10" value="50">  
-    </datalist>
-    <form>
-	   <p style="text-align:center">
-   		 <button> Найти </button>
-   	  </p>
-    </form>
-  </div>
-  <div id="hotels">
-    <h1 >Отели</h1>
-  </div>
-  <div id="content0">
-    <table style="border:0%; width:100%">
-     <tr>
-        <td><p style="text-align:center"><a href="hotel1.html"><img src="Minsk1.jpg" alt="hotel"  width=290 height="210"></a></p></td>
-        <td><p style="text-align:center"> <img src="hotels1.jpg" alt="hotel" width=290></p></td>
-        <td><p style="text-align:center"> <img src="hotels1.jpg" alt="hotel" width=290></p></td>
-     </tr>
+  <div class="layout">
+    <div id="content">
+      <table>
       <tr>
-        <td><p style="text-align:center"><a href="hotel1.html">Гостиница "Минск"</a></p></td>
-        <td><p style="text-align:center"> Название отеля</p></td>
-        <td><p style="text-align:center">Название отеля</p></td>
+        <td><a href="hotel1.html"><img src="Minsk1.jpg" alt="hotel"  width=290 height="210"><br><input class="check" type="checkbox" checked>Гостиница 'Минск'</a></td>
+        <td><img src="hotels1.jpg" alt="hotel" width=290><br><input class="check" type="checkbox">Название отеля</td>
+        <td><img src="hotels1.jpg" alt="hotel" width=290><br><input class="check" type="checkbox">Название отеля</td>
+     </tr>        
+     <tr>
+        <td><img src="hotels1.jpg" alt="hotel" width=290><br><input class="check" type="checkbox">Название отеля</td>
+        <td> <img src="hotels1.jpg" alt="hotel" width=290><br><input class="check" type="checkbox">Название отеля</td>
+        <td><img src="hotels1.jpg" alt="hotel" width=290><br><input class="check" type="checkbox">Название отеля</td>
      </tr>
      <tr>
-        <td><p style="text-align:center"><img src="hotels1.jpg" alt="hotel" width=290></p></td>
-        <td><p style="text-align:center"> <img src="hotels1.jpg" alt="hotel" width=290></p></td>
-        <td><p style="text-align:center"> <img src="hotels1.jpg" alt="hotel" width=290></p></td>
+        <td><img src="hotels1.jpg" alt="hotel" width=290><br><input class="check" type="checkbox">Название отеля</td>
+        <td> <img src="hotels1.jpg" alt="hotel" width=290><br><input class="check" type="checkbox">Название отеля</td>
+        <td> <img src="hotels1.jpg" alt="hotel" width=290><br><input class="check" type="checkbox">Название отеля</td>
      </tr>
      <tr>
-        <td><p style="text-align:center">Название отеля</p></td>
-        <td><p style="text-align:center"> Название отеля</p></td>
-        <td><p style="text-align:center">Название отеля</p></td>
-     </tr>
-     <tr>
-        <td><p style="text-align:center"><img src="hotels1.jpg" alt="hotel" width=290></p></td>
-        <td><p style="text-align:center"> <img src="hotels1.jpg" alt="hotel" width=290></p></td>
-        <td><p style="text-align:center"> <img src="hotels1.jpg" alt="hotel" width=290></p></td>
-     </tr>
-     <tr>
-        <td><p style="text-align:center">Название отеля</p></td>
-        <td><p style="text-align:center"> Название отеля</p></td>
-        <td><p style="text-align:center">Название отеля</p></td>
-     </tr> 
-     <tr>
-        <td><p style="text-align:center"><img src="hotels1.jpg" alt="hotel" width=290></p></td>
-        <td><p style="text-align:center"> <img src="hotels1.jpg" alt="hotel" width=290></p></td>
-        <td><p style="text-align:center"> <img src="hotels1.jpg" alt="hotel" width=290></p></td>
-     </tr>
-     <tr>
-        <td><p style="text-align:center">Название отеля</p></td>
-        <td><p style="text-align:center"> Название отеля</p></td>
-        <td><p style="text-align:center">Название отеля</p></td>
+        <td><img src="hotels1.jpg" alt="hotel" width=290><br><input class="check" type="checkbox">Название отеля</td>
+        <td> <img src="hotels1.jpg" alt="hotel" width=290><br><input class="check" type="checkbox">Название отеля</td>
+        <td><img src="hotels1.jpg" alt="hotel" width=290><br><input class="check" type="checkbox">Название отеля</td>
      </tr>
      <tr>
       <td>
         <form>
-	         <p style="text-align:center">
-   		       <button formaction="gorod.html">1 шаг (Выбор города)</button>
-        	 </p>
+   		       <button formaction="gorod.html">Выбор города</button>
         </form>
       </td>
       <td> 
         <form>
-	         <p style="text-align:center">
               <button formaction="mainpage.html">На главную </button>
-   	       </p>
         </form>
       </td>
       <td> 
         <form>
-	         <p style="text-align:center">
-   	          <button formaction="transport.html">3 шаг (Выбор транспорта)</button>
-   	       </p>
+   	          <button formaction="transport.html">Выбор транспорта</button>
         </form>
       </td>
     </tr>
   </table>
   </div>
+  <div id="sidebar">
+  <p> Ваш выбор</p>
+    <p>Дата заезда</p>
+      <input  id="date" min="2016-10-31" max="2017-10-31" type="date" name="date">
+      <p>Количество человек</p>
+      <input type="number" name="number" min="0">
+    <p>Количество ночей</p>
+    <input type="number" name="number" min="0">
+    <p> Тип номера </p>
+    <form > 
+          <select >
+            <option value="u1">Одноместный</option>
+            <option value="u2">Двухместный</option>
+            <option value="u3">Улучшенный двухместный</option>
+            <option value="u4">Люкс</option>
+            <option value="u5">Апартаменты</option>
+          </select>
+        </form> 
+    <p>Цена от (руб) за ночь</p>
+      <input  type="range" min="10" max="1000" onchange="document.getElementById('rangeValue').innerHTML = this.value;" list="rangeList"> <span id="rangeValue">500</span>
+    <datalist id="rangeList">
+      <input  type="range" min="10" max="5000" step="10" value="50">  
+    </datalist>
+    <form>
+       <button> Найти </button>
+    </form>
+  </div>
+  </div>
   <div id="footer">
-      <div style="position:absolute; left:45%">
-         ©2016MMF2group
-      </div>
-      <div style="position:absolute; left:56%; top:20%">
-          <img src="vk-logo.png" alt="vk-logo" style="height:23px; width:23px">
-      </div>
-      <div style="position:absolute; left:58% ; top:20%">
-          <img src="facebook-logo.png" alt="facebook-logo" style="height: 25px; width: 25px;">
-      </div>
+   ©2016MMF2group
+      <img src="vk-logo.png" alt="vk-logo">
+      <img src="facebook-logo.png" alt="facebook-logo">
   </div>
 </body>
 </html>
