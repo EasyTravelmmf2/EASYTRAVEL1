@@ -150,30 +150,8 @@ a:hover>.order{
   margin-left: -30px;
 }
 
-/*все что в контенте (картинки и выделение+кнопки-стрелки)*/
-    td > img, td > a > img{
-       margin-left: 12%;
-       margin-top: 5%;
-        height: 230px;
-        width: 300px;
-        border: 5px solid white;
-        box-shadow:0 5px 5px rgba(0,0,0,0.3);
-      }
-
-    td > p, td > a > p,td > form{
-        text-align: center;
-      }
-
     table{
-        width: 95%;
-      }
-
-    td:hover{
-        background: #D8E6E7;
-      }
-
-    tr:nth-last-child(1)>td:hover{
-        background: white;
+        width: 100%;
       }
 /*основной блок*/
     .layout{
@@ -189,8 +167,8 @@ a:hover>.order{
         float: left;
         margin-top: 2%;
         padding-bottom: 3%;
-        width:76%;
-        height: 79%;
+        width:100%;
+        height: 100%;
         text-align: center;
       }
 /*кнопки*/
