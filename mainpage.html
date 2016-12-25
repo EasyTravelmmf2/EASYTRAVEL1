@@ -3,166 +3,86 @@
 <head>
 <title> Главная </title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <style type="text/css">
-    body {
-       margin: 0;
-       background: #d5dbe8;
-      }
-    ::-webkit-scrollbar{
-        width:7px;
-      }
-   ::-webkit-scrollbar-thumb{
-        border-width:1px 1px 1px 2px;
-        border-color: #777;
-        border-radius: 10px;
-        background-color: #aaa;
-      }
-    ::-webkit-scrollbar-thumb:hover{
-        border-width: 1px 1px 1px 2px;
-        border-color: #555;
-        background-color: #777;
-      }
-    #content0, #footer{ 
-        overflow: auto;
-         padding: 10px; 
-      }
-    header{
-        position: fixed;
-        width: 100%;
-        top:0;
-        height:23%;
-        background: url(./header1.png) ;
-        background-size: 100% ;
-        z-index:1;
-      }
-      #navbar {
-        position: fixed;
-        margin-left: 0%;
-        margin-right: 0%;
-        padding: 0;
-        top: 15%;
-        width: 100%;
-        overflow: hidden;
-        list-style-type: none;
-        text-align: center;
-        font-size: 30px;
-        background: #D8E6E7; 
-        box-shadow: 0 0 10px rgba(0,0,0,0.3);        
-      }
-      #navbar li { 
-        display: inline;
-      }
-      #navbar a {
-        color: #6E7783;
-        text-decoration: none;
-        font-weight: bold;
-        display: inline-block;
-        width: 24.6%;
-      }
-      #navbar a:hover {
-        color: black;
-        background-color: #9DC3C1;
-        border-radius: 5px;
-      }
-    #mainpage{
-        position: fixed;
-        top:23%;
-        left: 28%; 
-        right: 28%;
-        text-align: center;
-        background: white;
-      }
-    #content0 {
-        position: fixed;
-        padding-top: 0;
-        top: 31%; 
-        left: 28%; 
-        bottom: 5%; 
-        right: 28%; 
-        background: white;
-        text-align: center;
-      }
-    #footer {
-        position: fixed;
-        top: 95%; 
-        left: 5%; 
-        bottom: 0%; 
-        right: 5%;
-        border-top:1px solid #6E7783;
-        background-color: white;
-      }
-    button{
-        color:black; 
-        text-decoration: none;
-        user-select: none;
-        cursor: pointer;
-        background:#9DC3C1 ;
-        padding: .7em 1.5em;
-        outline: none;
-        border:none; 
-        border-radius: 3px;
-        box-shadow: 0 -3px #1f4e5f inset;
-      }
-  </style>
+  <link rel="stylesheet" href="css-for-mainpage.css"/>
  </head>
  <body> 
-  <div style=" position:fixed; top:12%; right:3%; left:95%;z-index:2">
+  <div class="exit">
     <a href="mainpage.html">
-      <img src="exit.png" alt="exit" style="width:35px; height:35px">
+      <img src="exit.png" alt="exit">
     </a>
   </div>
-  <div style="position:fixed; top:12%; left:90%; z-index:2"> 
+  <div class="profil"> 
     <a href="profil.html">
-      <img src="profil.png" alt="user" style="width:35px; height:35px; color:blue">
+      <img src="profil.png" alt="profil">
     </a>
   </div>
  <header>
-      <ul  id="navbar" >
-        <li><a href="gorod.html">Города</a></li>
-        <li><a href="hotels.html" >Отели</a></li>
-        <li><a href="transport.html">Транспорт</a></li>
-        <li><a href="excursions.html">Экскурсии</a></li>
-      </ul>
-  </header>
-  <div id="content0">
-    <div id="mainpage">
-       <h1><i>Главная страница</i></h1>
-    </div>
-    <h3><i>1. Новые акции для наших клиентов</i></h3>
-    <p>.................................................</p>
-    <p>.................................................</p>
-    <p>.................................................</p>
-    <p>.................................................</p>
-    <h3><i>2. Обновление отелей и экскурсий</i></h3>
-    <p>.................................................</p>
-    <p>.................................................</p>
-    <p>.................................................</p>
-    <p>.................................................</p>
-      <table style="border:0%; width:100%">
-        <tr>
-          <td>
-            <form style="text-align:center;">
-             <button formaction="registration.html">Зарегистрироваться</button>
+      <div class="menu">
+        <a href="gorod.html">Города</a>
+        <a href="hotels.html" >Отели</a>
+        <a href="transport.html">Транспорт</a>
+        <a href="excursions.html">Экскурсии</a>
+        <a href="#">730 руб.
+        <div class="order">
+        <p>Ваш заказ</p>
+        <label>Город</label>
+        <input type="text" value="Минск" readonly><br>
+        <label>Название отеля</label>
+        <input type="text" value="Гостиница 'Минск'" readonly><br>
+        <label>Дата заезда</label>
+        <input  id="date" type="date" name="date" readonly><br>
+        <label>Количество ночей</label>
+        <input type="number" name="number" min="1" value="5" readonly><br>
+        <label>Количество человек</label>
+        <input type="number" name="number" min="1" value="4" readonly><br>
+        <label>Тип номера</label>
+        <input type="text" value="Люкс" readonly><br>
+        <label>Транспорт</label>
+        <input type="text" value="Автомобиль" readonly ><br>
+        <label>Дата выезда</label>
+        <input  id="date" type="date" name="date" readonly><br>
+        <label>Вид экскурсии</label>
+        <input type="text" value="Обзорная" readonly ><br>
+        </div>
+        </a>
+      </div>
+     </header>
+ <div class="layout">
+    <div id="content">
+    <h2>Экскурсии</h2>
+  <p>Новые акции для наших клиентов.<br>
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+    <p>Обновление базы отелей и экскурсий.<br>
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+      <table>
+        <tr>  
+          <td> 
+            <form>
+              <button formaction="registration.html">Зарегистрироваться</button>
             </form>
-         </td>
-         <td>
-          <form style="text-align:center;">
-            <button formaction="profil.html">Сделать заказ</button>
-          </form>
-        </td>
-      </tr>
+          </td>
+          <td> 
+            <form>
+              <button formaction="profil.html">Сделать заказ</button>
+            </form>
+          </td>
+        </tr>
     </table>
   </div>
+  </div>
   <div id="footer">
-      <div style="position:absolute; left:45%">
-         ©2016MMF2group
-      </div>
-      <div style="position:absolute; left:56%; top:20%">
-          <img src="vk-logo.png" alt="vk-logo" style="height:23px; width:23px">
-      </div>
-      <div style="position:absolute; left:58% ; top:20%">
-          <img src="facebook-logo.png" alt="facebook-logo" style="height: 25px; width: 25px;">
-      </div>
+   ©2016MMF2group
+      <img src="vk-logo.png" alt="vk-logo">
+      <img src="facebook-logo.png" alt="facebook-logo">
   </div>
 </body>
 </html>
