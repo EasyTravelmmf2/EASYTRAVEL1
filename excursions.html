@@ -2,249 +2,130 @@
 <html>
 <head>
 <title> Экскурсии </title>
-<meta http-equiv="Content-Type" content="text/html"; charset="utf-8" />
-  <style type="text/css">
-    body {
-       margin: 0;
-       background: #d5dbe8;
-      }
-    ::-webkit-scrollbar{
-        width:7px;
-      }
-   ::-webkit-scrollbar-thumb{
-        border-width:1px 1px 1px 2px;
-        border-color: #777;
-        border-radius: 10px;
-        background-color: #aaa;
-      }
-    ::-webkit-scrollbar-thumb:hover{
-        border-width: 1px 1px 1px 2px;
-        border-color: #555;
-        background-color: #777;
-      }
-    #sidebar, #content0, #footer{ 
-        overflow: auto;
-         padding: 10px; 
-      }
-    header{
-        position: fixed;
-        width: 100%;
-        top:0;
-        height:23%;
-        background: url(./header1.png) ;
-        background-size: 100% ;
-        z-index:1;
-      }
-      #navbar {
-        position: fixed;
-        margin-left: 0%;
-        margin-right: 0%;
-        padding: 0;
-        top: 15%;
-        width: 100%;
-        overflow: hidden;
-        list-style-type: none;
-        text-align: center;
-        font-size: 30px;
-        background: #D8E6E7; 
-        box-shadow: 0 0 10px rgba(0,0,0,0.3);        
-      }
-      #navbar li { 
-        display: inline;
-      }
-      #navbar a {
-        color: #6E7783;
-        text-decoration: none;
-        font-weight: bold;
-        display: inline-block;
-        width: 24.6%;
-      }
-      #navbar a:hover {
-        color: black;
-        background-color: #9DC3C1;
-        border-radius: 5px;
-      }
-    #sidebar { 
-        position: fixed;
-        top:23%;
-        background: #D8E6E7;
-        left:5%;
-        right:72%; 
-        bottom: 5%;
-        padding-top: 5%;
-      }
-    #excursions{
-        position: fixed;
-        top:23%;
-        left: 28%; 
-        right: 5%;
-        text-align: center;
-        background: white;
-      }
-    #content0 {
-        position: fixed;
-        padding-top: 0;
-        top: 31%; 
-        left: 28%; 
-        bottom: 5%; 
-        right: 5%; 
-        background: white;
-      }
-    #footer {
-        position: fixed;
-        top: 95%; 
-        left: 5%; 
-        bottom: 0%; 
-        right: 5%;
-        border-top:1px solid #6E7783;
-        background-color: white;
-      }
-    button{
-        color:black; 
-        text-decoration: none;
-        user-select: none;
-        cursor: pointer;
-        background:#9DC3C1 ;
-        padding: .7em 1.5em;
-        outline: none;
-        border:none; 
-        border-radius: 3px;
-        box-shadow: 0 -3px #1f4e5f inset;
-      } 
-  </style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="css-for-excursions.css"/>
  </head>
  <body>
-  <div style=" position:fixed; top:12%; right:3%; left:95%;z-index:2">
+  <div class="exit">
     <a href="mainpage.html">
-      <img src="exit.png" alt="exit" style="width:35px; height:35px">
+      <img src="exit.png" alt="exit">
     </a>
   </div>
-  <div style="position:fixed; top:12%; left:90%; z-index:2"> 
+  <div class="profil"> 
     <a href="profil.html">
-      <img src="profil.png" alt="user" style="width:35px; height:35px; color:blue">
+      <img src="profil.png" alt="profil">
     </a>
   </div>
  <header>
-      <ul  id="navbar" >
-        <li><a href="gorod.html">Города</a></li>
-        <li><a href="hotels.html" >Отели</a></li>
-        <li><a href="transport.html">Транспорт</a></li>
-        <li><a href="excursions.html" style="background-color: #9DC3C1; border-radius: 5px; color: black">Экскурсии</a></li>
-      </ul>
-  </header>
-<div id="sidebar">
-  <h3 style="text-align:center"> <i> Город</i></h3>
-  <form style="text-align:center"> 
-    <select style="width:180px" >
-      <option value="u1">Минск</option>
-      <option value="u2">Могилев</option>
-      <option value="u3">Витебск</option>
-      <option value="u4">Гродно</option>
-      <option value="u5">Гомель</option>
-      <option value="u6">Брест</option>
-    </select>
-  </form>
-  <h3 style="text-align:center"><i> Вид экскурсии</i></h3>
-  <form style="text-align:center">
-    <select style="width:180px" >
-      <option value="u1">Обзорная</option>
-      <option value="u2">Тематическая</option>
-      <option value="u3">Литературная</option>
-      <option value="u4">Историческая</option>
-      <option value="u5">Неунылая</option>
-    </select>
-  </form>
-  <h3 style="text-align:center"><i>Дата</i></h3>
-  <p style="text-align:center"> 
-    <input id="date" min="2016-10-31" max="2017-10-31" type="date" name="date">
-  </p>
-  <h3 style="text-align:center"><i>Цена до (руб)</i></h3> 
-  <p style="text-align:center"> 
-    <input style="width:150px" type="range" min="10" max="1000" onchange="document.getElementById('rangeValue').innerHTML = this.value;" list="rangeList"> <span id="rangeValue">500</span> 
-  </p> 
-  <datalist id="rangeList"> 
-    <input type="range" min="10" max="1000" step="10" value="50"> 
-  </datalist> 
-   <form>
-       <p style="text-align:center">
-         <button> Найти </button>
-       </p>
-    </form>
-  </div>
-  <div id="excursions">
-    <h1>Экскурсии</h1>
-  </div>
-  <div id="content0">
-    <p><i>1.Информация о первой экскурсии.</i></p>
-    <p style="text-align:right;">
-      <table style="border:0%; width:100%">
-        <tr>
-          <td><p style="text-align:center;"> <img src="bus_image.jpg" width=290 alt="bus_image"></p></td>
-          <td><p style="text-align:center;"> <img src="bus_image.jpg" width=290 alt="bus_image"></p></td>
-          <td><p style="text-align:center;"> <img src="bus_image.jpg" width=290 alt="bus_image"></p></td>
-        </tr>
-        <tr>
-         <td><p style="text-align:center;"> Название</p></td>
-          <td><p style="text-align:center;"> Название</p></td>
-          <td><p style="text-align:center;"> Название</p></td>
-        </tr>
-     </table>
-    <p><i>2.Информация о второй экскурсии.</i></p>
-    <p style="text-align:right;">
-      <table style="border:0%; width:100%">
-        <tr>
-          <td><p style="text-align:center;"> <img src="bus_image.jpg" width=290 alt="bus_image"></p></td>
-          <td><p style="text-align:center;"> <img src="bus_image.jpg" width=290 alt="bus_image"></p></td>
-          <td><p style="text-align:center;"> <img src="bus_image.jpg" width=290 alt="bus_image"></p></td>
-       </tr>
-        <tr>
-          <td><p style="text-align:center;"> Название</p></td>
-          <td><p style="text-align:center;"> Название</p></td>
-          <td><p style="text-align:center;"> Название</p></td>
-        </tr>
-      </table>
-    <p><i>3.Информация о третьей экскурсии.</i></p>
-    <p style="text-align:right;">
-      <table style="border:0%; width:100%">
-        <tr>
-          <td><p style="text-align:center;"> <img src="bus_image.jpg" width=290 alt="bus_image"></p></td>
-          <td><p style="text-align:center;"> <img src="bus_image.jpg" width=290 alt="bus_image"></p></td>
-          <td><p style="text-align:center;"> <img src="bus_image.jpg" width=290 alt="bus_image"></p></td>
-        </tr>
-        <tr>
-          <td><p style="text-align:center;"> Название</p></td>
-          <td><p style="text-align:center;"> Название</p></td>
-          <td><p style="text-align:center;"> Название</p></td>
-        </tr>
+      <div class="menu">
+        <a href="gorod.html">Города</a>
+        <a href="hotels.html" >Отели</a>
+        <a href="transport.html">Транспорт</a>
+        <a href="excursions.html">Экскурсии</a>
+        <a href="#">730 руб.
+        <div class="order">
+        <p>Ваш заказ</p>
+        <label>Город</label>
+        <input type="text" value="Минск" readonly><br>
+        <label>Название отеля</label>
+        <input type="text" value="Гостиница 'Минск'" readonly><br>
+        <label>Дата заезда</label>
+        <input  id="date" type="date" name="date" readonly><br>
+        <label>Количество ночей</label>
+        <input type="number" name="number" min="1" value="5" readonly><br>
+        <label>Количество человек</label>
+        <input type="number" name="number" min="1" value="4" readonly><br>
+        <label>Тип номера</label>
+        <input type="text" value="Люкс" readonly><br>
+        <label>Транспорт</label>
+        <input type="text" value="Автомобиль" readonly ><br>
+        <label>Дата выезда</label>
+        <input  id="date" type="date" name="date" readonly><br>
+        <label>Вид экскурсии</label>
+        <input type="text" value="Обзорная" readonly ><br>
+        </div>
+        </a>
+      </div>
+     </header>
+  <div class="layout">
+    <div id="content">
+    <h2>Экскурсии</h2>
+	<p><img class="right" src="bus_image.jpg" width=250 alt="bus_image">1.Информация о первой экскурсии.<br>
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+	<button>Выбрать вариант 1</button>
+    <p><img class="right" src="bus_image.jpg" width=250 alt="bus_image">2.Информация о первой экскурсии.<br>
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+	<button>Выбрать вариант 2</button>
+    <p><img class="right" src="bus_image.jpg" width=250 alt="bus_image">3.Информация о первой экскурсии.<br>
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+	<button>Выбрать вариант 3</button>
+      <table>
         <tr>  
           <td> 
-           <form style="text-align:center;">
-              <button formaction="transport.html">3 шаг (Выбор транспорта)</button>
-           </form>
+	        <form>
+	   		  <button formaction="transport.html">Выбор транспорта</button>
+	        </form>
           </td>
           <td> 
-            <form style="text-align:center;">
+            <form>
               <button formaction="mainpage.html">На главную </button>
             </form>
           </td>
           <td> 
-            <form style="text-align:center;">
+            <form>
               <button formaction="profil.html">Сделать заказ</button>
             </form>
           </td>
         </tr>
     </table>
  </div>
+   <div id="sidebar">
+	  <p> Ваш выбор</p>
+	    <p>Дата экскурсии</p>
+	      <input  id="date" min="2016-10-31" max="2017-10-31" type="date" name="date">
+	      <p>Количество человек</p>
+	      <input type="number" name="number" min="0">
+		    <p> Тип экскурсии </p>
+		    <form > 
+		        <select>
+					    <option value="u1">Обзорная</option>
+					    <option value="u2">Тематическая</option>
+					    <option value="u3">Литературная</option>
+					    <option value="u4">Историческая</option>
+					    <option value="u5">Неунылая</option>
+		        </select>
+		    </form> 
+  <h3>Цена от (руб)</h3> 
+  <p></p>
+    <input type="range" min="10" max="1000" onchange="document.getElementById('rangeValue').innerHTML = this.value;" list="rangeList"> <span id="rangeValue">500</span> 
+  <datalist id="rangeList"> 
+    <input type="range" min="10" max="1000" step="10" value="50"> 
+  </datalist> 
+   <form>
+       <p>
+         <button> Найти </button>
+       </p>
+    </form>
+  </div>
+  </div>
   <div id="footer">
-      <div style="position:absolute; left:45%">
-         ©2016MMF2group
-      </div>
-      <div style="position:absolute; left:56%; top:20%">
-          <img src="vk-logo.png" alt="vk-logo" style="height:23px; width:23px">
-      </div>
-      <div style="position:absolute; left:58% ; top:20%">
-          <img src="facebook-logo.png" alt="facebook-logo" style="height: 25px; width: 25px;">
-      </div>
+   ©2016MMF2group
+      <img src="vk-logo.png" alt="vk-logo">
+      <img src="facebook-logo.png" alt="facebook-logo">
   </div>
 </body>
 </html>
