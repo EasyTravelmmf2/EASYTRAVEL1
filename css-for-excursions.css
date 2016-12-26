@@ -293,6 +293,9 @@ a:hover>.order{
       width: 180px;
     }
 
+    select{
+      width: 180px;
+    }
 /*футр и лого в нем*/
 
     #footer {
