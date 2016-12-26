@@ -255,6 +255,9 @@ margin-left: -30px;
         background: #D8E6E7;
         border-top: 10px solid white;
       }
+          #sidebar>p:first-child{
+      font-size: 18px;
+    }
 /*кнопки*/
     button{
         color:black; 

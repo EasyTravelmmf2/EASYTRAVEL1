@@ -102,6 +102,9 @@ body {
         text-align: center;
         border-top: 10px solid white;
       }
+    #sidebar>p:first-child{
+      font-size: 18px;
+    }
 
 /*кнопки*/
     button{
