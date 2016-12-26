@@ -1,239 +1,80 @@
 <!Doctype html>
 <html>
 <head>
-<title> Транспорт </title>
+<title> Профиль </title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<style type="text/css">
-   body {  margin: 0; 
-       background: #d5dbe8;
-      } 
-   #sidebar,#content0,#footer{ 
-        overflow: auto; 
-        padding: 10px; 
-      }
-      header{
-        position: fixed;
-        width: 100%;
-        top:0;
-        height:23%;
-        background: url(./header1.png) ;
-        background-size: 100% ;
-        z-index:1;
-      }
-      #navbar {
-        position: fixed;
-        margin-left: 0%;
-        margin-right: 0%;
-        padding: 0;
-        top: 15%;
-        width: 100%;
-        overflow: hidden;
-        list-style-type: none;
-        text-align: center;
-        font-size: 30px;
-        background: #D8E6E7; 
-        box-shadow: 0 0 10px rgba(0,0,0,0.3);
-      }
-    #navbar li { 
-        display: inline;
-         }
-    #navbar a {
-        color: #6E7783;
-        text-decoration: none;
-        font-weight: bold;
-        display: inline-block;
-        width: 24.6%;
-      }
-    #navbar a:hover {
-        color: black;
-        background-color: #9DC3C1;
-        border-radius: 5px;
-      }
-   #sidebar { 
-        position: fixed;
-        top:23%;
-        background: #D8E6E7;
-        left:5%;
-        right:72%; 
-        bottom: 5%;
-        padding-top: 2%;
-      }
-   #content0 {
-       position: fixed;
-        padding-top: 0;
-        top: 23%; 
-        left: 28%; 
-        bottom: 5%; 
-        right: 5%; 
-        background: white;
-      }
-      #leftcontent{
-        position: absolute;
-        margin-left: 0;
-        width:34%;
-        padding-left: 2%;
-      }
-    #rightcontent{
-        position: absolute;
-        margin-left: 42%;
-        margin-right: 3%;
-        padding-left:2%;
-        padding-top:1%;
-        padding-right:2%;
-        border-left: 1px double #9DC3C1;
-        border-right: 1px double #9DC3C1;
-        font-size: 17px;
-      }
-    #footer {
-        position: fixed;
-        top: 95%; 
-        left: 5%; 
-        bottom: 0%; 
-        right: 5%;
-        border-top:1px solid #6E7783;
-        background-color: white;
-      }    
-    button{
-        color:black; 
-        text-decoration: none;
-        user-select: none;
-        cursor: pointer;
-        background:#9DC3C1 ;
-        padding: .7em 1.5em;
-        outline: none;
-        border:none; 
-        border-radius: 3px;
-        box-shadow: 0 -3px #1f4e5f inset;
-      } 
-  </style>
+ <link rel="stylesheet" href="css-for-easytravel3-transport.css"/>
+
  </head>
-<body>
- <div style=" position:fixed; top:12%; right:3%; left:95%;z-index:2">
+ <body>
+  <div class="exit">
     <a href="mainpage.html">
-      <img src="exit.png" alt="exit" style="width:35px; height:35px">
+      <img src="exit.png" alt="exit">
     </a>
   </div>
-<div style=" position:absolute; top:5%;right:5%; left:85%"><i><u><a href="mainpage.html">Выход</a></u></i></div> 
- <div style="position:absolute; left:80% "> 
-      <img src="profil.jpg" alt="profil" style="width:35px; height:35px"> 
-  </div>
-  <div style="position:fixed; top:12%; left:90%; z-index:2"> 
+  <div class="profil"> 
     <a href="profil.html">
-      <img src="profil.png" alt="profil" style="width:35px; height:35px">
+      <img src="profil.png" alt="profil">
     </a>
   </div>
   <header>
-      <ul  id="navbar" >
-       <li><a href="gorod.html">Города</a></li>
-       <li><a href="hotels.html">Отели</a></li>
-       <li><a href="transport.html">Транспорт</a></li>
-       <li><a href="excursions.html">Экскурсии</a></li>
-      </ul>
+      <div class="menu">
+        <a href="gorod.html">Города</a>
+        <a href="hotels.html" >Отели</a>
+        <a href="transport.html">Транспорт</a>
+        <a href="excursions.html">Экскурсии</a>
+        <a href="#">730 руб.</a>
+        </div>
+
   </header>
 
-<div id="sidebar">
-<div style="text-align:center"><img src="x_f58f0914.jpg" alt="фото профиля" width=100 height=100 >
+<div class="center">
+  <img src="vk.jpg" alt="фото профиля" width=100 height=100 >
+  <p>
+  Имя: Борька   <p></p>
+  Фамилия: Петров  <p></p>
+  E-mail: qwert@bsu.by   <p></p>
+  Контактные данные: +375291234567  
 </div>
 
-<p></p>
-<b>
-<div style="text-align:center">Имя:    </div> <p></p>
-<div style="text-align:center">Фамилия:   </div><p></p>
-<div style="text-align:center">E-mail:    </div><p></p>
-<div style="text-align:center">Контактные данные:    </div>
-</b>
-
-
-
-
-</div>
-<div id="content0">
-<div style="text-align:center"><h1><ins>Ваш заказ</ins></h1>
-<div style="text-align:center"><h2><i> Отель</i></h2>
-<form>
-	<select>
-		<option value="u1">5 звезд</option>
-		<option value="u2">4 звезды</option>
-		<option value="u3">3 звезды</option>
-		<option value="u4">2 звезды</option>
-		<option value="u5">1 звезда</option>
-	</select>
-</form>
-</div>
-   <div style="text-align:center"><h2 ><i>Город</i></h2>
-<form>
-  <p><input name="city" placeholder="Город" size=13></p>
-</form>
-</div>
-<div style="text-align:center">
-<h2><i><label for="Date">Дата </label> </i></h2>
-
-<input id="date" min="2016-10-31" max="2017-10-31" type="date" name="date">
-
-</div>
-<div style="text-align:center"><h2><i>Транспорт</i></h2>
-<form>
-	<select>
-		<option value="u1">Автобус</option>
-		<option value="u2">Автомобиль</option>
-		<option value="u3">Велосипед</option>
-
-	</select>
-</form>
-</div>
-</div>
-<div style="text-align:center"><h2><i>Способ оплаты</i></h2>
-<form>
-	<select>
-		<option value="u1">Наличка</option>
-		<option value="u2">Карточка</option>
-		<option value="u3">Чек</option>
-
-	</select>
-</form>
-</div>
-<div style="text-align:center"><h2><i> Сумма заказа</i> </h2> 
-</div>
-<div style="text-align:center"> 
-<input type="range" min="300" max="3000" onchange="document.getElementById('rangeValue').innerHTML = this.value;" list="rangeList"> <span id="rangeValue">1800</span> 
-</div>
-<center>
- <table style="border:0px; width:12%; text-align:center"> 
-  
-<tr>
-   <td>
-  <form>
-
-    <button formaction="mainpage.html">Подтвердить</button>
-
+  <div class="layout">
+        <br>
+        <p>Ваш заказ</p>
+        <label>Город:</label>
+        <input type="text" value="Минск" readonly><p>
+        <label>Название отеля:</label>
+        <input type="text" value="Гостиница 'Минск'"readonly><p>
+        <label>Дата заезда:</label>
+        <input  id="date" type="date" name="date" readonly><p>
+        <label>Количество ночей:</label>
+        <input type="number" value="4" name="number" min="1" readonly><p>
+        <label>Количество человек:</label>
+        <input type="number" value="5" name="number" min="1" readonly><p>
+        <label>Тип номера:</label>
+        <input type="text" value="Люкс" readonly><p>
+        <label>Транспорт:</label>
+        <input type="text" value="Автомобиль" readonly ><p>
+        <label>Дата выезда:</label>
+        <input  id="date" type="date" name="date" readonly><p>
+        <label>Вид экскурсии:</label>
+        <input type="text" value="Обзорная" readonly ><p>
+        <label>Цена:</label>
+        <input type="text" value="730 руб." readonly><p><br>
+        <form>
+      <button formaction="profil.html">Принять</button>&nbsp;&nbsp;
+      <button formaction="profil.html">Отменить</button>
   </form>
-  </td>
-  <td> 
-  <form>
- 
-    <button formaction="profil.html">Отмена</button>
-  
-  </form>
-  </td>
+        </div>
 
-</table> </center>
 
-</div> 
-<div id="footer">
-  <hr>
- <div style="position:absolute; left:45%">
-  ©2016MMF2group
+  </div>
+        
+      </div>
   </div>
   <div id="footer">
-        <div style="position:absolute; left:45%">
-           ©2016MMF2group
-        </div>
-        <div style="position:absolute; left:56%; top:20%">
-          <img src="vk-logo.png" alt="vk-logo" style="height:23px; width:23px">
-        </div>
-        <div style="position:absolute; left:58% ; top:20%">
-          <img src="facebook-logo.png" alt="facebook-logo" style="height: 25px; width: 25px;">
-        </div>
-    </div>
+   ©2016MMF2group
+      <img src="vk-logo.png" alt="vk-logo">
+      <img src="facebook-logo.png" alt="facebook-logo">
+  </div>
 </body>
 </html>

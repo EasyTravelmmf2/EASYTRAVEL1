@@ -3,228 +3,128 @@
 <head>
 <title> Транспорт </title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<style type="text/css">
-   body {  margin: 0; 
-       background: #d5dbe8;
-      } 
-   #sidebar,#content0,#footer{ 
-        overflow: auto; 
-        padding: 10px; 
-      }
-      header{
-        position: fixed;
-        width: 100%;
-        top:0;
-        height:23%;
-        background: url(./header1.png) ;
-        background-size: 100% ;
-        z-index:1;
-      }
-      #navbar {
-        position: fixed;
-        margin-left: 0%;
-        margin-right: 0%;
-        padding: 0;
-        top: 15%;
-        width: 100%;
-        overflow: hidden;
-        list-style-type: none;
-        text-align: center;
-        font-size: 30px;
-        background: #D8E6E7; 
-        box-shadow: 0 0 10px rgba(0,0,0,0.3);
-      }
-    #navbar li { 
-        display: inline;
-         }
-    #navbar a {
-        color: #6E7783;
-        text-decoration: none;
-        font-weight: bold;
-        display: inline-block;
-        width: 24.6%;
-      }
-    #navbar a:hover {
-        color: black;
-        background-color: #9DC3C1;
-        border-radius: 5px;
-      }
-   #sidebar { 
-        position: fixed;
-        top:23%;
-        background: #D8E6E7;
-        left:5%;
-        right:72%; 
-        bottom: 5%;
-        padding-top: 2%;
-      }
-   #content0 {
-       position: fixed;
-        padding-top: 0;
-        top: 23%; 
-        left: 28%; 
-        bottom: 5%; 
-        right: 5%; 
-        background: white;
-      }
-      #leftcontent{
-        position: absolute;
-        margin-left: 0;
-        width:34%;
-        padding-left: 2%;
-      }
-    #rightcontent{
-        position: absolute;
-        margin-left: 42%;
-        margin-right: 3%;
-        padding-left:2%;
-        padding-top:1%;
-        padding-right:2%;
-        border-left: 1px double #9DC3C1;
-        border-right: 1px double #9DC3C1;
-        font-size: 17px;
-      }
-    #footer {
-        position: fixed;
-        top: 95%; 
-        left: 5%; 
-        bottom: 0%; 
-        right: 5%;
-        border-top:1px solid #6E7783;
-        background-color: white;
-      }    
-    button{
-        color:black; 
-        text-decoration: none;
-        user-select: none;
-        cursor: pointer;
-        background:#9DC3C1 ;
-        padding: .7em 1.5em;
-        outline: none;
-        border:none; 
-        border-radius: 3px;
-        box-shadow: 0 -3px #1f4e5f inset;
-      } 
-  </style>
+  <link rel="stylesheet" href="css-for-easytravel-transport.css"/>
  </head>
  <body>
-   <div style=" position:fixed; top:12%; right:3%; left:95%;z-index:2">
+  <div class="exit">
     <a href="mainpage.html">
-      <img src="exit.png" alt="exit" style="width:35px; height:35px">
+      <img src="exit.png" alt="exit">
     </a>
   </div>
-  <div style="position:fixed; top:12%; left:90%; z-index:2"> 
+  <div class="profil"> 
     <a href="profil.html">
-      <img src="profil.png" alt="profil" style="width:35px; height:35px">
+      <img src="profil.png" alt="profil">
     </a>
   </div>
   <header>
-      <ul  id="navbar" >
-       <li><a href="gorod.html">Города</a></li>
-       <li><a href="hotels.html">Отели</a></li>
-       <li><a href="transport.html" style="color:black;background-color: #9DC3C1; border-radius: 5px;">Транспорт</a></li>
-       <li><a href="excursions.html">Экскурсии</a></li>
-      </ul>
+      <div class="menu">
+        <a href="gorod.html">Города</a>
+        <a href="hotels.html" >Отели</a>
+        <a href="transport.html">Транспорт</a>
+        <a href="excursions.html">Экскурсии</a>
+        <a href="#">500 руб.
+        <div class="order">
+        <p>Ваш заказ</p>
+        <label>Город</label>
+        <input type="text" value="Минск" readonly><br>
+        <label>Название отеля</label>
+        <input type="text" value="Гостиница 'Минск'" readonly><br>
+        <label>Дата заезда</label>
+        <input  id="date" type="date" name="date" readonly><br>
+        <label>Количество ночей</label>
+        <input type="number" value="5" name="number" min="1" readonly><br>
+        <label>Количество человек</label>
+        <input type="number" value="4" name="number" min="1" readonly><br>
+        <label>Тип номера</label>
+        <input type="text" value="Люкс" readonly><br>
+        <label>Транспорт</label>
+        <input type="text" value="Автомобиль" readonly ><br>
+        <label>Дата выезда</label>
+        <input  id="date" type="date" name="date" readonly><br>
+        <label>Вид экскурсии</label>
+        <input type="text" readonly ><br>
+        </div>
+        </a>
+      </div>
   </header>
+  <div class="layout">
+    <div id="content">
+      <table>
+      <tr>
+        <td><a href="transport1.html"><img src="auto.jpg" alt="auto"  width=290 height="210"><br><input class="check" type="checkbox" checked>Автомобиль</a></td>
+       <td><img src="bus_image.jpg" alt="hotel" width=290><br><input class="check" type="checkbox">Название транспорта</td>
+       <td><img src="bus_image.jpg" alt="hotel" width=290><br><input class="check" type="checkbox">Название транспорта</td>
+     </tr>        
+     <tr>
+        <td><img src="bus_image.jpg" alt="hotel" width=290><br><input class="check" type="checkbox">Название транспорта</td>
+        <td><img src="bus_image.jpg" alt="hotel" width=290><br><input class="check" type="checkbox">Название транспорта</td>
+        <td><img src="bus_image.jpg" alt="hotel" width=290><br><input class="check" type="checkbox">Название транспорта</td>
+     </tr>
+     <tr>
+        <td><img src="bus_image.jpg" alt="hotel" width=290><br><input class="check" type="checkbox">Название транспорта</td>
+        <td><img src="bus_image.jpg" alt="hotel" width=290><br><input class="check" type="checkbox">Название транспорта</td>
+        <td><img src="bus_image.jpg" alt="hotel" width=290><br><input class="check" type="checkbox">Название транспорта</td>
+     </tr>
+     <tr>
+        <td><img src="bus_image.jpg" alt="hotel" width=290><br><input class="check" type="checkbox">Название транспорта</td>
+        <td><img src="bus_image.jpg" alt="hotel" width=290><br><input class="check" type="checkbox">Название транспорта</td>
+        <td><img src="bus_image.jpg" alt="hotel" width=290><br><input class="check" type="checkbox">Название транспорта</td>
+     </tr>
+     <tr>
+      <td>
+        <form>
+   		       <button formaction="hotels.html">Выбор отеля</button>
+        </form>
+      </td>
+      <td> 
+        <form>
+              <button formaction="mainpage.html">На главную</button>
+        </form>
+      </td>
+      <td> 
+        <form>
+   	          <button formaction="excursions.html">Выбор экскурсии</button>
+        </form>
+      </td>
+    </tr>
+  </table>
+  </div>
 
   <div id="sidebar">
-<div style="text-align:center"><h3><i> Страна</i></h3>
-<form>
-	<select>
-		<option value="u1">Беларусь</option>
-		<option value="u2">Россия</option>
-		<option value="u3">Великобритания</option>
-		<option value="u4">Германия</option>
-		<option value="u5">Польша</option>
-	</select>
-</form>
-</div>
-   <div style="text-align:center"><h3><i> Город</i></h3>
-<form>
+  <p> Ваш выбор</p>
+   <p> Ваш город</p>
+  <form>
   <p><input name="city" placeholder="Город" size=13></p>
 </form>
-</div>
-<div style="text-align:center">
-<h3><i><label for="Date">Дата </label> </i></h3>
+    <p>Дата отъезда</p>
+      <input  id="date" min="2016-10-31" max="2017-10-31" type="date" name="date">
+  <p> Тип транспорта </p>
+    <form > 
+          <select >
+            <option value="u1">Автомобиль</option>
+            <option value="u3">Мотоцикл</option>
+            <option value="u2">Самолет</option>
+            <option value="u4">Своим ходом</option>
+          </select>
+        </form> 
+    
+    <p>Цена от (руб)</p>
+      <input  type="range" multiple min="10" max="1000" onchange="document.getElementById('rangeValue').innerHTML = this.value;" list="rangeList"> 
+      <span id="rangeValue">500</span> 
 
-<input id="date" min="2016-10-31" max="2017-10-31" type="date" name="date">
-
-</div>
- 
-<div style="text-align:center"><h3><i> 
-Цена до ($) 
-</i> 
-</h3> 
-</div>
-
-
-<div style="text-align:center"> 
-<input type="range" min="10" max="1000" onchange="document.getElementById('rangeValue').innerHTML = this.value;" list="rangeList"> <span id="rangeValue">500</span> 
-</div>
-
-<datalist id="rangeList"> 
-<input type="range" min="10" max="1000" step="10" value="50"> 
-</datalist> 
- <form>
-     <p style="text-align:center">
+    <datalist id="rangeList">
+      <input  type="range" min="10" max="5000" step="10" value="50">  
+    </datalist>
+    <form>
        <button> Найти </button>
-      </p>
     </form>
-      </div>
-  <div id="content0">
-   <h2><i>
-  <p  style="text-align:center">Транспорт</p>
-  </i></h2>
-  <table style="border:0%; width:100%">
-        <tr>
-          <td><p style="text-align:center;"> <img src="bus_image.jpg" width=290 alt="bus_image"></p></td>
-          <td><p style="text-align:center;"> <img src="automobil.jpg" width=290 alt="automobil"></p></td>
-          <td><p style="text-align:center;"> <img src="tramvai.jpg" width=290 alt="tramvai"></p></td>
-        </tr>
-        <tr>
-         <td><p style="text-align:center;">Автобус</p></td>
-          <td><p style="text-align:center;">Автомобиль</p></td>
-          <td><p style="text-align:center;">Трамвай</p></td>
-        </tr>
-     </table>
-   <table style="border:0px; width:100%"> 
-   
-<tr>
-   <td>
-   <form>
-           <p style="text-align:center">
-             <button formaction="hotels.html">2 шаг (Выбор отеля)</button>
-           </p>
-        </form>
-      </td>
-      <td> 
-        <form>
-           <p style="text-align:center">
-              <button formaction="mainpage.html">На главную </button>
-           </p>
-        </form>
-      </td>
-      <td> 
-        <form>
-           <p style="text-align:center">
-              <button formaction="excursions.html">3 шаг (Выбор экскурсии)</button>
-           </p>
-        </form>
-  </td>
-  </tr> 
-</table> 
+  </div>
 
-</div> 
- <div id="footer">
-        <div style="position:absolute; left:45%">
-           ©2016MMF2group
-        </div>
-        <div style="position:absolute; left:56%; top:20%">
-          <img src="vk-logo.png" alt="vk-logo" style="height:23px; width:23px">
-        </div>
-        <div style="position:absolute; left:58% ; top:20%">
-          <img src="facebook-logo.png" alt="facebook-logo" style="height: 25px; width: 25px;">
-        </div>
-    </div>
+  </div>
+  <div id="footer">
+   ©2016MMF2group
+      <img src="vk-logo.png" alt="vk-logo">
+      <img src="facebook-logo.png" alt="facebook-logo">
+  </div>
 </body>
 </html>
