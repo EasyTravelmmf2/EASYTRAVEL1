@@ -1,0 +1,230 @@
+body {width:100%;
+        max-width: 2024px;
+        min-width: 1000px;
+        margin:0;
+        background: white;
+        background-repeat: no-repeat;
+        font-family:Arial,Helvetica, sans-serif;
+        overflow: hidden; }
+#content1, #content0{ position: absolute; } 
+#content2,#content1, #content0, #content,#footer{ overflow: auto; padding: 10px; } 
+#content2{
+  position: fixed;
+        top: 20%;
+        width: 60%;
+        height: 75%;
+        bottom: 5%
+        left:40%;
+        right: 20%;
+        
+        background:#F2F7F8;
+      
+}
+#content{               
+  position: fixed;
+        top: 27%;
+        width: 25%;
+        height: 40%;
+        bottom: 40%;
+        margin-top: 5%;
+        margin-bottom:13%;
+        margin-left:3%;
+        margin-right: 10%;
+        background:#D8E6E7;
+      
+}
+#content0 {
+text-align:center;
+top: 5%; 
+margin-left: 20%; 
+bottom: 0%; 
+margin-right: 5%; 
+font-family: helvetica, sans-serif;
+} 
+
+#content1 { 
+text-align:center;
+width: 20%
+height:10%;
+top: 0%; 
+left: 50%; 
+margin-left: 12%;
+bottom: 0%; 
+margin-right: 5%;
+font-family: helvetica, sans-serif; }
+#footer {
+        position: fixed;
+        top: 95%; 
+        left: 0%; 
+        bottom: 0%; 
+        right: 0%;
+        border-top:1px solid #6E7783;
+        background-color: white;
+        z-index: 2;
+        text-align: center;
+        font-size: 13px;
+        font-family: helvetica, sans-serif;
+        overflow: hidden;
+      }
+      #footer:nth-child(1){
+        position:absolute;
+        left:56%;
+        top:20%;
+      }
+    #footer:nth-child(2){
+        position:absolute;
+        left:58% ;
+        top:20%;
+      }
+
+    #footer > img {
+        height:15px;
+        width:15px;
+      }
+       .menu { 
+position: fixed; 
+margin-top: 9%; 
+width: 100%; 
+max-width:1600px; 
+min-width: 1600px ; 
+margin-right: 0; 
+margin-left: 0; 
+background: white; 
+bottom:77%; 
+} 
+
+.menu > a { 
+display: inline-block; 
+position: relative; 
+height: 50px; 
+width: 16.65%; 
+margin-left:0%; 
+margin-right:0%; 
+padding: 0 10px 0 40px; 
+font: 23px/50px helvetica, sans-serif; 
+text-decoration: none; 
+color:#6E7783; 
+background: #D8E6E7; 
+} 
+
+
+.menu > a:after { 
+content: ""; 
+display: inline-block; 
+position: absolute; 
+right: -8%; 
+z-index: 2; 
+border-left: 30px solid #D8E6E7; 
+border-top: 25px solid transparent; 
+border-bottom: 25px solid transparent; 
+} 
+
+.menu > a:last-of-type:after { 
+display: none; 
+} 
+.menu > a:last-of-type{ 
+background: #FEF549; 
+} 
+.menu > a:last-of-type:after:hover { 
+display: none; 
+} 
+.menu > a:last-of-type:hover{ 
+background: #FEF549; 
+} 
+
+
+.menu > a:before { 
+content: ""; 
+display: inline-block; 
+position: absolute; 
+top: 0%; 
+left: 0%; 
+z-index: 1; 
+border-left: 31px solid white; 
+border-top: 26px solid transparent; 
+border-bottom: 24px solid transparent; 
+} 
+.menu > a:first-child:before { 
+display: none; 
+} 
+
+.menu > a:hover { 
+background: #9DC3C1; 
+color: black; 
+} 
+
+.menu > a:hover:after { 
+border-left-color: #9DC3C1; 
+} 
+
+
+
+#sidebar, #content, #footer{ 
+overflow: auto; 
+padding: 10px; 
+} 
+
+       
+   .exit{
+        position:fixed;
+        top:10%;
+        right:3%;
+        left:95%;
+        z-index: 3;
+      }
+
+    .profil{
+        position:fixed; 
+        top:10%; 
+        left:90%; 
+        z-index:3;
+      }
+
+    .exit > a > img , .profil > a > img{
+        width:35px;
+        height:35px
+      }
+
+    #footer:nth-child(1){
+        position:absolute;
+        left:56%;
+        top:20%;
+      }
+    #footer:nth-child(2){
+        position:absolute;
+        left:58% ;
+        top:20%;
+      }
+
+    #footer > img {
+        height:15px;
+        width:15px;
+      }
+    input{
+      width: 180px;
+    }
+
+    button{
+        color:black; 
+        text-decoration: none;
+        user-select: none;
+        cursor: pointer;
+        background:#9DC3C1 ;
+        padding: .7em 1.5em;
+        outline: none;
+        border:none; 
+      }
+      button:hover{
+        box-shadow: 0 -2px #1f4e5f inset;
+      }
+
+header{
+        position: fixed;
+        width: 100%;
+        top:0;
+        height:23%;
+        background: url(./header1.png) ;
+        background-size: 100% ;
+        z-index:1;
+      }
+    p{font-size: 18px;}
