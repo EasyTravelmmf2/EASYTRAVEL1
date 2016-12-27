@@ -108,7 +108,7 @@ color: black;
 border-left-color: #9DC3C1; 
 } 
 
-#sidebar, #content, #footer{ 
+.sidebar, .content, .footer{ 
 overflow: auto; 
 padding: 10px; 
 } 
@@ -158,21 +158,12 @@ border-width: 30px;
 margin-left: -30px; 
 }
 
-    #sidebar, #content, #footer{ 
-        overflow: auto;
-        padding: 10px; 
-      }
-  /*выпадающая цена*/
- 
-
 /*все что в контенте (картинки и выделение+кнопки-стрелки)*/
     td > img, td > a > img{
        margin-left: 12%;
        margin-top: 5%;
         height: 230px;
         width: 300px;
-        border: 5px solid white;
-        box-shadow:0 5px 5px rgba(0,0,0,0.3);
       }
 
     td > p, td > a > p,td > form{
@@ -239,7 +230,7 @@ margin-left: -30px;
       }
 
 /*блок с отелями*/
-    #content{
+    .content{
         float: left;
         margin-top: 2%;
         padding-bottom: 3%;
@@ -247,7 +238,7 @@ margin-left: -30px;
         height: 79%;
       }
 /*блок выбора*/
-    #sidebar{
+    .sidebar{
         margin-left: 76%;
         height: 80%;
         padding-top:2%;
@@ -255,7 +246,7 @@ margin-left: -30px;
         background: #D8E6E7;
         border-top: 10px solid white;
       }
-          #sidebar>p:first-child{
+.sidebar>p:first-child{
       font-size: 18px;
     }
 /*кнопки*/
@@ -304,7 +295,7 @@ margin-left: -30px;
 
 /*футр и лого в нем*/
 
-    #footer {
+    .footer {
         position: fixed;
         top: 95%; 
         left: 0%; 
@@ -317,18 +308,18 @@ margin-left: -30px;
         font-size: 13px;
         overflow: hidden;
       }
-    #footer:nth-child(1){
+    .footer:nth-child(1){
         position:absolute;
         left:56%;
         top:20%;
       }
-    #footer:nth-child(2){
+    .footer:nth-child(2){
         position:absolute;
         left:58% ;
         top:20%;
       }
 
-    #footer > img {
+    .footer > img {
         height:15px;
         width:15px;
       }

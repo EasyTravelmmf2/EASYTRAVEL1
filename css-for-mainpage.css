@@ -74,8 +74,6 @@ body {
     .menu >  a:last-of-type:hover{
       background: #FEF549;
     }
-
-
     .menu > a:before { 
         content: "";
         display: inline-block;
@@ -100,11 +98,12 @@ body {
         border-left-color: #9DC3C1;
       }  
 
+
     #sidebar, #content, #footer{ 
         overflow: auto;
         padding: 10px; 
       }
-  /*выпадающая цена*/
+/*выпадающая цена*/
   .order{
     display:none;
     margin-top: -60px;
@@ -119,40 +118,41 @@ body {
     -webkit-box-shadow:0 5px 5px rgba(0,0,0,0.3);
     box-shadow:0 5px 5px rgba(0,0,0,0.3);
     clear:both; text-align:right;
-}
-.order>label{
- float:left;
-}
-.order>p{
-  text-align: center;
-}
-a:hover>.order{
+    }
+  .order>label{
+    float:left;
+    }
+  .order>p{
+    text-align: center;
+    }
+  a:hover>.order{
     display:block;
     position:absolute;
     top:120px;
     z-index:9999;
     width:110%;
-}
-.order:after{
-  bottom: 100%;
-  left: 80%;
-  border: solid transparent;
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-.order:after {
-  border-color: rgba(136, 183, 213, 0);
-  border-bottom-color: #FFFA9B;
-  border-width: 30px;
-  margin-left: -30px;
-}
+    }
+  .order:after{
+    bottom: 100%;
+    left: 80%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    }
+  .order:after {
+    border-color: rgba(136, 183, 213, 0);
+    border-bottom-color: #FFFA9B;
+    border-width: 30px;
+    margin-left: -30px;
+    }
 
-    table{
+table{
         width: 100%;
       }
+
 /*основной блок*/
     .layout{
         position: fixed;
@@ -162,8 +162,8 @@ a:hover>.order{
         background: white;
       }
 
-/*блок с отелями*/
-    #content{
+/*блок */
+    .content{
         float: left;
         margin-top: 2%;
         padding-bottom: 3%;
@@ -171,6 +171,7 @@ a:hover>.order{
         height: 100%;
         text-align: center;
       }
+
 /*кнопки*/
     button{
         color:black; 
@@ -184,7 +185,7 @@ a:hover>.order{
       }
      button:hover{
       box-shadow: 0 -2px #1f4e5f inset;
-     }
+      }
     td > form{
         padding: 5%;
       }
@@ -217,7 +218,7 @@ a:hover>.order{
 
 /*футр и лого в нем*/
 
-    #footer {
+    .footer {
         position: fixed;
         top: 95%; 
         left: 0%; 
@@ -269,6 +270,7 @@ a:hover>.order{
         border-color: #555;
         background-color: #777;
       }
+      
       h2{
       	font-weight: normal;
       }

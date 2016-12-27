@@ -4,170 +4,171 @@
 <title> Регистрация</title> 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
 <style type="text/css"> 
-body {width:100%;
-        max-width: 2024px;
-        min-width: 1000px;
-        margin:0;
-        background: white;
-        background-repeat: no-repeat;
-        font-family:Arial,Helvetica, sans-serif;
-        overflow: hidden; }
-#content1, #content0{ position: absolute; } 
-#content2,#content1, #content0, #content,#footer{ overflow: auto; padding: 10px; } 
-#content2{
+body {
+  width:100%;
+  max-width: 2024px;
+  min-width: 1000px;
+  margin:0;
+  background: white;
+  background-repeat: no-repeat;
+  font-family:Arial,Helvetica, sans-serif;
+  overflow: hidden; 
+  }
+.content1, .content0{
+    position: absolute;
+  } 
+.content2,.content1, .content0, .content,.footer{
+    overflow: auto; padding: 10px; 
+  } 
+.content2{
   position: fixed;
-        top: 20%;
-        width: 60%;
-        height: 75%;
-        bottom: 5%
-        left:40%;
-        right: 20%;
-        
-        background:#F2F7F8;
-      
+  top: 20%;
+  width: 60%;
+  height: 75%;
+  bottom: 5%
+  left:40%;
+  right: 20%;
+  background:#F2F7F8;    
 }
-#content{               
+.content{               
   position: fixed;
-        top: 27%;
-        width: 25%;
-        height: 40%;
-        bottom: 40%;
-        margin-top: 5%;
-        margin-bottom:13%;
-        margin-left:3%;
-        margin-right: 10%;
-        background:#D8E6E7;
-      
+  top: 27%;
+  width: 25%;
+  height: 40%;
+  bottom: 40%;
+  margin-top: 5%;
+  margin-bottom:13%;
+  margin-left:3%;
+  margin-right: 10%;
+  background:#D8E6E7;    
 }
-#content0 {
-text-align:center;
-top: 5%; 
-margin-left: 20%; 
-bottom: 0%; 
-margin-right: 5%; 
-font-family: helvetica, sans-serif;
+.content0 {
+  text-align:center;
+  top: 5%; 
+  margin-left: 20%; 
+  bottom: 0%; 
+  margin-right: 5%; 
+  font-family: helvetica, sans-serif;
 } 
 
-#content1 { 
-text-align:center;
-width: 20%
-height:10%;
-top: 0%; 
-left: 50%; 
-margin-left: 12%;
-bottom: 0%; 
-margin-right: 5%;
-font-family: helvetica, sans-serif; }
-#footer {
-        position: fixed;
-        top: 95%; 
-        left: 0%; 
-        bottom: 0%; 
-        right: 0%;
-        border-top:1px solid #6E7783;
-        background-color: white;
-        z-index: 2;
-        text-align: center;
-        font-size: 13px;
-        font-family: helvetica, sans-serif;
-        overflow: hidden;
-      }
-      #footer:nth-child(1){
-        position:absolute;
-        left:56%;
-        top:20%;
-      }
-    #footer:nth-child(2){
-        position:absolute;
-        left:58% ;
-        top:20%;
-      }
+.content1 { 
+  text-align:center;
+  width: 20%
+  height:10%;
+  top: 0%; 
+  left: 50%; 
+  margin-left: 12%;
+  bottom: 0%; 
+  margin-right: 5%;
+  font-family: helvetica, sans-serif; 
+}
+.footer {
+  position: fixed;
+  top: 95%; 
+  left: 0%; 
+  bottom: 0%; 
+  right: 0%;
+  border-top:1px solid #6E7783;
+  background-color: white;
+  z-index: 2;
+  text-align: center;
+  font-size: 13px;
+  font-family: helvetica, sans-serif;
+  overflow: hidden;
+}
+.footer:nth-child(1){
+  position:absolute;
+  left:56%;
+  top:20%;
+}
+.footer:nth-child(2){
+  position:absolute;
+  left:58% ;
+  top:20%;
+}
 
-    #footer > img {
-        height:15px;
-        width:15px;
-      }
-       .menu { 
-position: fixed; 
-margin-top: 9%; 
-width: 100%; 
-max-width:1600px; 
-min-width: 1600px ; 
-margin-right: 0; 
-margin-left: 0; 
-background: white; 
-bottom:77%; 
+.footer > img {
+  height:15px;
+  width:15px;
+}
+.menu { 
+  position: fixed; 
+  margin-top: 9%; 
+  width: 100%; 
+  max-width:1600px; 
+  min-width: 1600px ; 
+  margin-right: 0; 
+  margin-left: 0; 
+  background: white; 
+  bottom:77%; 
 } 
 
 .menu > a { 
-display: inline-block; 
-position: relative; 
-height: 50px; 
-width: 16.65%; 
-margin-left:0%; 
-margin-right:0%; 
-padding: 0 10px 0 40px; 
-font: 23px/50px helvetica, sans-serif; 
-text-decoration: none; 
-color:#6E7783; 
-background: #D8E6E7; 
+  display: inline-block; 
+  position: relative; 
+  height: 50px; 
+  width: 16.65%; 
+  margin-left:0%; 
+  margin-right:0%; 
+  padding: 0 10px 0 40px; 
+  font: 23px/50px helvetica, sans-serif; 
+  text-decoration: none; 
+  color:#6E7783; 
+  background: #D8E6E7; 
 } 
 
-
 .menu > a:after { 
-content: ""; 
-display: inline-block; 
-position: absolute; 
-right: -8%; 
-z-index: 2; 
-border-left: 30px solid #D8E6E7; 
-border-top: 25px solid transparent; 
-border-bottom: 25px solid transparent; 
+  content: ""; 
+  display: inline-block; 
+  position: absolute; 
+  right: -8%; 
+  z-index: 2; 
+  border-left: 30px solid #D8E6E7; 
+  border-top: 25px solid transparent; 
+  border-bottom: 25px solid transparent; 
 } 
 
 .menu > a:last-of-type:after { 
-display: none; 
+  display: none; 
 } 
 .menu > a:last-of-type{ 
-background: #FEF549; 
+  background: #FEF549; 
 } 
 .menu > a:last-of-type:after:hover { 
-display: none; 
+  display: none; 
 } 
 .menu > a:last-of-type:hover{ 
-background: #FEF549; 
+bottomackground: #FEF549; 
 } 
-
-
 .menu > a:before { 
-content: ""; 
-display: inline-block; 
-position: absolute; 
-top: 0%; 
-left: 0%; 
-z-index: 1; 
-border-left: 31px solid white; 
-border-top: 26px solid transparent; 
-border-bottom: 24px solid transparent; 
+  content: ""; 
+  display: inline-block; 
+  position: absolute; 
+  top: 0%; 
+  left: 0%; 
+  z-index: 1; 
+  border-left: 31px solid white; 
+  border-top: 26px solid transparent; 
+  border-bottom: 24px solid transparent; 
 } 
 .menu > a:first-child:before { 
-display: none; 
+  display: none; 
 } 
 
 .menu > a:hover { 
-background: #9DC3C1; 
-color: black; 
+  background: #9DC3C1; 
+  color: black; 
 } 
 
 .menu > a:hover:after { 
-border-left-color: #9DC3C1; 
+  border-left-color: #9DC3C1; 
 } 
 
 
 
-#sidebar, #content, #footer{ 
-overflow: auto; 
-padding: 10px; 
+.sidebar, .content, .footer{ 
+  overflow: auto; 
+  padding: 10px; 
 } 
 
        
@@ -191,18 +192,18 @@ padding: 10px;
         height:35px
       }
 
-    #footer:nth-child(1){
+    .footer:nth-child(1){
         position:absolute;
         left:56%;
         top:20%;
       }
-    #footer:nth-child(2){
+    .footer:nth-child(2){
         position:absolute;
         left:58% ;
         top:20%;
       }
 
-    #footer > img {
+    .footer > img {
         height:15px;
         width:15px;
       }
@@ -248,9 +249,9 @@ header{
       </div>
       </div>
   </header>
-  <div id="content2">
-    <div id="content">
-<div id="content0"> 
+  <div class="content2">
+    <div class="content">
+<div class="content0"> 
 <p><h3>Вход</h3></p> 
 <p>Ваш e-mail</p>
 <p><input name='Ваш адрес электронный почты'></p> 
@@ -261,7 +262,7 @@ header{
 </form> 
 </div>
 </div>
-<div id="content1">
+<div class="content1">
 <p><h3>Регистрация</h3></p>
 <p>Фамилия</p>
 <p><input type= 'text' name= Фамилия></p> 
@@ -278,7 +279,7 @@ header{
 </form> 
 </div> 
 </div>
- <div id="footer">
+ <div class="footer">
    ©2016MMF2group
       <img src="vk-logo.png" alt="vk-logo">
       <img src="facebook-logo.png" alt="facebook-logo">

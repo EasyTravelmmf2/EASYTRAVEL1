@@ -109,7 +109,7 @@ body {
         border-left-color: #9DC3C1;
       }     
 
-    #sidebar, #content, #footer{ 
+    .sidebar, .content, .footer{ 
         overflow: auto;
         padding: 10px; 
       }
@@ -233,7 +233,7 @@ a:hover>.order{
       }
 
 /*блок с отелями*/
-    #content{
+    .content{
         float: left;
         margin-top: 2%;
         padding-bottom: 3%;
@@ -241,7 +241,7 @@ a:hover>.order{
         height: 79%;
       }
 /*блок выбора*/
-    #sidebar{
+    .sidebar{
         margin-left: 76%;
         height: 80%;
         padding-top:2%;
@@ -298,7 +298,7 @@ a:hover>.order{
     }
 /*футр и лого в нем*/
 
-    #footer {
+    .footer {
         position: fixed;
         top: 95%; 
         left: 0%; 
@@ -311,18 +311,18 @@ a:hover>.order{
         font-size: 13px;
         overflow: hidden;
       }
-    #footer:nth-child(1){
+    .footer:nth-child(1){
         position:absolute;
         left:56%;
         top:20%;
       }
-    #footer:nth-child(2){
+    .footer:nth-child(2){
         position:absolute;
         left:58% ;
         top:20%;
       }
 
-    #footer > img {
+    .footer > img {
         height:15px;
         width:15px;
       }
@@ -362,6 +362,6 @@ a:hover>.order{
       h3{
       	font-weight: normal;
       }
-      #sidebar > p:first-child{ 
+      .sidebar > p:first-child{ 
         font-size: 18px; 
       }

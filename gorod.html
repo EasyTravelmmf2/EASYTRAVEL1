@@ -15,7 +15,7 @@ body {
         font-family:Arial,Helvetica, sans-serif;
          overflow: hidden;
       }
-#sidebar, #content0,#content1,#content,#footer{ overflow: auto; padding: 10px; } 
+.sidebar, .content0,.content1,.content,.footer{ overflow: auto; padding: 10px; } 
  header{
         position: fixed;
         top:0;
@@ -30,7 +30,7 @@ body {
         left:0;
       }
  
-#sidebar { 
+.sidebar { 
 		position: fixed;
         top:25%;
         left:10%;
@@ -38,7 +38,7 @@ body {
 select{
 	width: 180px;
 	font-size: 23px;}
-#content0 { 
+.content0 { 
  		position: fixed;
         top: 23%;
         width: 80%;
@@ -52,7 +52,7 @@ select{
         opacity: 0.6;
 }
 
-#text { 
+.text { 
  		position: fixed;
         top: 23%;
         width: 75%;
@@ -67,14 +67,14 @@ select{
         font-size: 18px;
         padding-left: 3%;
 }
-  #content1{
+  .content1{
       	position: fixed;
       	top: 80%; 
 		left: 0%; 
 		bottom: 3%; right: 0;
 
       }
-      #content{
+      .content{
   	position: fixed;
   	background: url(./gorod.jpg);
   	top: 23%;
@@ -87,7 +87,7 @@ select{
         background-repeat: no-repeat;
         overflow: hidden;
   }
-#footer {
+.footer {
         position: fixed;
         top: 95%; 
         left: 0%; 
@@ -186,7 +186,7 @@ color: black;
 border-left-color: #9DC3C1; 
 } 
 
-#sidebar, #content, #footer{ 
+.sidebar, .content, .footer{ 
 overflow: auto; 
 padding: 10px; 
 } 
@@ -256,18 +256,18 @@ margin-left: -30px;
         height:35px
       }
 
-    #footer:nth-child(1){
+    .footer:nth-child(1){
         position:absolute;
         left:56%;
         top:20%;
       }
-    #footer:nth-child(2){
+    .footer:nth-child(2){
         position:absolute;
         left:58% ;
         top:20%;
       }
 
-    #footer > img {
+    .footer > img {
         height:15px;
         width:15px;
       }
@@ -387,9 +387,9 @@ margin-left: -30px;
       </div>
       </div>
   </header>
-<div id="content">
-	<div id="content0">
-	<div id="sidebar">
+<div class="content">
+	<div class="content0">
+	<div class="sidebar">
   <form > 
           <select>
             <option value="u1">Минск</option>
@@ -402,11 +402,11 @@ margin-left: -30px;
         </form> 
         </div>
         </div>
- <div id="text">
+ <div class="text">
    <h2 style="text-align:left; color:black">Минск</h2> 
 Минск  — столица Беларуси, административный центр Минской области и Минского района, в состав которых не входит, поскольку является самостоятельной административно-территориальной единицей с особым (столичным) статусом. Имеет звание «Город-Герой». Крупнейший транспортный узел, политический, экономический, культурный и научный центр страны. Является ядром Минской агломерации. В Минске находится штаб-квартира СНГ. Десятый по численности населения (без учёта пригородов) город в Европе, третий — в ЕАЭС. Город расположен недалеко от географического центра страны и стоит на реке Свислочи. Площадь составляет 348,84 км², население — 1964,2 тыс. человек (на 1 июля 2016 года) без учёта пригородов.Минск расположен на юго-восточном склоне Минской возвышенности, имеющей моренное происхождение.
 </div>
-<div id="content1">
+<div class="content1">
 <table style="border:0%; width:100%">
  <tr>
       <td>
@@ -422,7 +422,7 @@ margin-left: -30px;
     </tr>
   </table>
   </div></div>
- <div id="footer">
+ <div class="footer">
    ©2016MMF2group
       <img src="vk-logo.png" alt="vk-logo">
       <img src="facebook-logo.png" alt="facebook-logo">

@@ -26,7 +26,7 @@ body {
 /*меню*/
 
      
-    #sidebar, #content, #footer{ 
+    .sidebar, .content, .footer{ 
         overflow: auto;
         padding: 10px; 
       }
@@ -83,7 +83,7 @@ body {
       }
 
 /*блок с отелем*/
-    #content{
+    .content{
       float: left;
       width: 76%;
       height: 79%;
@@ -94,7 +94,7 @@ body {
       }
 
 /*блок с выбором*/
-    #sidebar{
+    .sidebar{
         background: #D8E6E7;
         height: 84%;
         padding-top: 2%;
@@ -102,7 +102,7 @@ body {
         text-align: center;
         border-top: 10px solid white;
       }
-    #sidebar>p:first-child{
+    .sidebar>p:first-child{
       font-size: 18px;
     }
 
@@ -153,7 +153,7 @@ body {
 
 /*футр и лого в нем*/
 
-    #footer {
+    .footer {
         position: fixed;
         top: 95%; 
         left: 0%; 
@@ -166,18 +166,18 @@ body {
         font-size: 13px;
         overflow: hidden;
       }
-    #footer:nth-child(1){
+    .footer:nth-child(1){
         position:absolute;
         left:56%;
         top:20%;
       }
-    #footer:nth-child(2){
+    .footer:nth-child(2){
         position:absolute;
         left:58% ;
         top:20%;
       }
 
-    #footer > img {
+    .footer > img {
         height:15px;
         width:15px;
       }
@@ -289,10 +289,6 @@ color: black;
 border-left-color: #9DC3C1; 
 } 
 
-#sidebar, #content, #footer{ 
-overflow: auto; 
-padding: 10px; 
-} 
 /*выпадающая цена*/ 
 .order{ 
 display:none; 
@@ -340,25 +336,25 @@ margin-left: -30px;
 }
 
 
-  #content > p:first-child{
+  .content > p:first-child{
     position: absolute;
     margin-top: 1%;
     font-size: 25px;
     text-align: center;
     width: 73%;
   }    
-    #leftcontent{
+    .leftcontent{
         position: absolute;
         margin-left: 0;
         margin-top: 5%;
         width:33%;
         padding-left: 1%;
       }
-    #leftcontent>img{
+    .leftcontent>img{
               border: 5px solid white;
         box-shadow:0 5px 5px rgba(0,0,0,0.3);
     }
-    #rightcontent{
+    .rightcontent{
         position: absolute;
         margin-top: 5%;
         margin-left: 35%;
